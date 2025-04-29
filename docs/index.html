@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="nav.css">
     <title>Maps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        main {
+            padding: 40px 24px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        p, ul {
+            font-size: 16px;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
 </head>
 
+<body>
 <div id="nav-placeholder"></div>
 
+<main>
+    <h1>Проект: Оптимизация маршрутов</h1>
+    <p>Этот веб-интерфейс показывает результаты оптимизации маршрутов доставки товаров и сотрудников.</p>
+    <p>Вы можете выбрать один из вариантов в меню выше, чтобы увидеть маршруты на карте и статистику загрузки
+        транспорта.</p>
+
+    <h2>Возможности</h2>
+    <ul>
+        <li>Просмотр маршрутов на карте</li>
+        <li>Поддержка нескольких сценариев (сотрудники и товары)</li>
+        <li>Отображение загрузки транспорта</li>
+        <li>Поддержка различных метрик: время, расстояние, ёмкость</li>
+    </ul>
+</main>
+
 <script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    });
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
 </script>
 </body>
 </html>
