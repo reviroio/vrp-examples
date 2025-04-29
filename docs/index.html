@@ -15,7 +15,6 @@
         main {
             padding: 40px 24px;
             max-width: 900px;
-            margin: auto;
         }
 
         h1 {
@@ -37,6 +36,35 @@
         ul {
             padding-left: 20px;
         }
+
+        .examples {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .example {
+            flex: 1 1 45%;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .example img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .example p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 
@@ -56,6 +84,18 @@
         <li>Отображение загрузки транспорта</li>
         <li>Поддержка различных метрик: время, расстояние, ёмкость</li>
     </ul>
+    <h2>Примеры маршрутов</h2>
+    <div class="examples">
+        <div class="example">
+            <img src="example1.png" alt="Маршрут доставки сотрудников">
+            <p>Маршрут доставки сотрудников</p>
+        </div>
+        <div class="example">
+            <img src="example2.png" alt="Маршрут доставки товаров">
+            <p>Маршрут доставки товаров</p>
+        </div>
+    </div>
+
 </main>
 
 <script>
