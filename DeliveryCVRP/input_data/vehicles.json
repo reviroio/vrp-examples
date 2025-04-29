@@ -1,0 +1,42 @@
+[
+  {
+    "id": "Vehicle 1",
+    "capacity": 47
+  },
+  {
+    "id": "Vehicle 2",
+    "capacity": 35
+  },
+  {
+    "id": "Vehicle 3",
+    "capacity": 16
+  },
+  {
+    "id": "Vehicle 4",
+    "capacity": 16
+  },
+  {
+    "id": "Vehicle 5",
+    "capacity": 40
+  },
+  {
+    "id": "Vehicle 6",
+    "capacity": 42
+  },
+  {
+    "id": "Vehicle 7",
+    "capacity": 11
+  },
+  {
+    "id": "Vehicle 8",
+    "capacity": 45
+  },
+  {
+    "id": "Vehicle 9",
+    "capacity": 11
+  },
+  {
+    "id": "Vehicle 10",
+    "capacity": 35
+  }
+]

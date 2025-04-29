@@ -1,0 +1,101 @@
+[
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  },
+  {
+    "start_time": "06:00",
+    "end_time": "20:00",
+    "capacity": 10,
+    "type": "corporate",
+    "cost_per_km": 10,
+    "cost_per_route": null,
+    "location": [52.744360, 41.478213]
+  }
+]

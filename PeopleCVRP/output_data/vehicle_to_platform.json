@@ -1,0 +1,3306 @@
+{
+  "platform_1": {
+    "vehicles": {
+      "vehicle_1": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:29"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 105,
+              "name": "Елена",
+              "location": [
+                52.736378,
+                41.48374
+              ]
+            },
+            "time": "08:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 266,
+              "name": "Иса",
+              "location": [
+                52.735879,
+                41.467575
+              ]
+            },
+            "time": "08:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 121,
+              "name": "Анна",
+              "location": [
+                52.726668,
+                41.474495
+              ]
+            },
+            "time": "08:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 127,
+              "name": "Людмила",
+              "location": [
+                52.725496,
+                41.464583
+              ]
+            },
+            "time": "08:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 245,
+              "name": "Фаина",
+              "location": [
+                52.726421,
+                41.456543
+              ]
+            },
+            "time": "08:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 181,
+              "name": "Жанна",
+              "location": [
+                52.735938,
+                41.45489
+              ]
+            },
+            "time": "08:50"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 270,
+              "name": "Булат",
+              "location": [
+                52.746034,
+                41.44602
+              ]
+            },
+            "time": "08:53"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 301,
+              "name": "Роксана",
+              "location": [
+                52.746435,
+                41.446937
+              ]
+            },
+            "time": "08:54"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 235,
+              "name": "Клара",
+              "location": [
+                52.735966,
+                41.437342
+              ]
+            },
+            "time": "08:57"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "16 km (15156 m)",
+        "time": "31 minutes",
+        "cost": 151.56
+      },
+      "vehicle_2": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 254,
+              "name": "Алишер",
+              "location": [
+                52.726954,
+                41.474177
+              ]
+            },
+            "time": "08:24"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 171,
+              "name": "Арина",
+              "location": [
+                52.716179,
+                41.453994
+              ]
+            },
+            "time": "08:30"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 104,
+              "name": "Иван",
+              "location": [
+                52.71607,
+                41.448501
+              ]
+            },
+            "time": "08:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 203,
+              "name": "Адель",
+              "location": [
+                52.716927,
+                41.446132
+              ]
+            },
+            "time": "08:32"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 133,
+              "name": "Дарья",
+              "location": [
+                52.716168,
+                41.433991
+              ]
+            },
+            "time": "08:35"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 240,
+              "name": "Рустам",
+              "location": [
+                52.717044,
+                41.427361
+              ]
+            },
+            "time": "08:38"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 261,
+              "name": "Амалия",
+              "location": [
+                52.725815,
+                41.398277
+              ]
+            },
+            "time": "08:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 194,
+              "name": "Аркадий",
+              "location": [
+                52.715947,
+                41.406421
+              ]
+            },
+            "time": "08:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 202,
+              "name": "Родион",
+              "location": [
+                52.706354,
+                41.398208
+              ]
+            },
+            "time": "08:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 237,
+              "name": "Белла",
+              "location": [
+                52.726977,
+                41.438314
+              ]
+            },
+            "time": "08:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "24 km (23980 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 239.8
+      },
+      "vehicle_3": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 263,
+              "name": "Анжела",
+              "location": [
+                52.756593,
+                41.475929
+              ]
+            },
+            "time": "08:22"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 145,
+              "name": "Яна",
+              "location": [
+                52.756169,
+                41.485614
+              ]
+            },
+            "time": "08:25"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 251,
+              "name": "Флоренс",
+              "location": [
+                52.755502,
+                41.486715
+              ]
+            },
+            "time": "08:26"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 147,
+              "name": "Валентина",
+              "location": [
+                52.756116,
+                41.456959
+              ]
+            },
+            "time": "08:32"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 309,
+              "name": "Виталина",
+              "location": [
+                52.755704,
+                41.418851
+              ]
+            },
+            "time": "08:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 287,
+              "name": "Милена",
+              "location": [
+                52.766217,
+                41.404159
+              ]
+            },
+            "time": "08:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 302,
+              "name": "Артемий",
+              "location": [
+                52.756044,
+                41.408811
+              ]
+            },
+            "time": "08:46"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 215,
+              "name": "Нелли",
+              "location": [
+                52.746517,
+                41.416051
+              ]
+            },
+            "time": "08:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 236,
+              "name": "Эмиль",
+              "location": [
+                52.735538,
+                41.40419
+              ]
+            },
+            "time": "08:54"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 219,
+              "name": "Альбина",
+              "location": [
+                52.736231,
+                41.40631
+              ]
+            },
+            "time": "08:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "22 km (21241 m)",
+        "time": "44 minutes",
+        "cost": 212.41
+      },
+      "vehicle_4": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:06"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 149,
+              "name": "Полина",
+              "location": [
+                52.737165,
+                41.447162
+              ]
+            },
+            "time": "08:11"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 136,
+              "name": "Георгий",
+              "location": [
+                52.705708,
+                41.473867
+              ]
+            },
+            "time": "08:17"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 223,
+              "name": "Ника",
+              "location": [
+                52.705852,
+                41.474024
+              ]
+            },
+            "time": "08:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 165,
+              "name": "Римма",
+              "location": [
+                52.706123,
+                41.48553
+              ]
+            },
+            "time": "08:22"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 114,
+              "name": "Алексей",
+              "location": [
+                52.695403,
+                41.485085
+              ]
+            },
+            "time": "08:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 172,
+              "name": "Виталий",
+              "location": [
+                52.696501,
+                41.468549
+              ]
+            },
+            "time": "08:43"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 193,
+              "name": "Оксана",
+              "location": [
+                52.697156,
+                41.467095
+              ]
+            },
+            "time": "08:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 244,
+              "name": "Мурат",
+              "location": [
+                52.696414,
+                41.466012
+              ]
+            },
+            "time": "08:46"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 186,
+              "name": "Фёдор",
+              "location": [
+                52.69587,
+                41.454271
+              ]
+            },
+            "time": "08:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 106,
+              "name": "Дмитрий",
+              "location": [
+                52.702131,
+                41.455302
+              ]
+            },
+            "time": "08:52"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "21 km (20728 m)",
+        "time": "54 minutes",
+        "cost": 207.28
+      },
+      "vehicle_5": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:57"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 299,
+              "name": "Глория",
+              "location": [
+                52.707011,
+                41.394896
+              ]
+            },
+            "time": "08:10"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 297,
+              "name": "Ориана",
+              "location": [
+                52.695598,
+                41.41699
+              ]
+            },
+            "time": "08:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 177,
+              "name": "Лидия",
+              "location": [
+                52.695738,
+                41.417848
+              ]
+            },
+            "time": "08:17"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 130,
+              "name": "Егор",
+              "location": [
+                52.69712,
+                41.405225
+              ]
+            },
+            "time": "08:20"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 277,
+              "name": "Феруза",
+              "location": [
+                52.696596,
+                41.407227
+              ]
+            },
+            "time": "08:21"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 273,
+              "name": "Зарина",
+              "location": [
+                52.695603,
+                41.397942
+              ]
+            },
+            "time": "08:23"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 225,
+              "name": "Мирослава",
+              "location": [
+                52.695873,
+                41.393941
+              ]
+            },
+            "time": "08:33"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 143,
+              "name": "Жанна",
+              "location": [
+                52.705772,
+                41.428522
+              ]
+            },
+            "time": "08:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 253,
+              "name": "Элеонора",
+              "location": [
+                52.706757,
+                41.426478
+              ]
+            },
+            "time": "08:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 264,
+              "name": "Шахин",
+              "location": [
+                52.706348,
+                41.434869
+              ]
+            },
+            "time": "08:50"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "26 km (25431 m)",
+        "time": "1 hours, 3 minutes",
+        "cost": 254.31
+      },
+      "vehicle_6": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 308,
+              "name": "Денислав",
+              "location": [
+                52.765467,
+                41.474809
+              ]
+            },
+            "time": "07:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 283,
+              "name": "Анисия",
+              "location": [
+                52.765446,
+                41.488453
+              ]
+            },
+            "time": "08:22"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.739143,
+                41.424569
+              ]
+            },
+            "time": "09:00"
+          }
+        ],
+        "distance": "17 km (16909 m)",
+        "time": "1 hours, 18 minutes",
+        "cost": 169.09
+      }
+    },
+    "total_distance": "124 km (123445 m)",
+    "total_time": "6 hours, 0 minutes",
+    "total_cost": 1234.45
+  },
+  "platform_2": {
+    "vehicles": {
+      "vehicle_1": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:30"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 100,
+              "name": "Александр",
+              "location": [
+                52.751038,
+                41.474426
+              ]
+            },
+            "time": "08:38"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 230,
+              "name": "Муса",
+              "location": [
+                52.755479,
+                41.477486
+              ]
+            },
+            "time": "08:43"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 167,
+              "name": "Элина",
+              "location": [
+                52.765972,
+                41.487542
+              ]
+            },
+            "time": "09:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 174,
+              "name": "Ярослав",
+              "location": [
+                52.765612,
+                41.456897
+              ]
+            },
+            "time": "09:50"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 195,
+              "name": "Виолетта",
+              "location": [
+                52.765979,
+                41.446715
+              ]
+            },
+            "time": "09:52"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 118,
+              "name": "Никита",
+              "location": [
+                52.766853,
+                41.437883
+              ]
+            },
+            "time": "09:54"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 220,
+              "name": "Трофим",
+              "location": [
+                52.765727,
+                41.435632
+              ]
+            },
+            "time": "09:55"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 255,
+              "name": "Маргарита",
+              "location": [
+                52.76555,
+                41.437477
+              ]
+            },
+            "time": "09:56"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 2,
+              "location": [
+                52.754064,
+                41.454011
+              ]
+            },
+            "time": "10:00"
+          }
+        ],
+        "distance": "19 km (18581 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 185.81
+      },
+      "vehicle_2": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "09:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 274,
+              "name": "Наиль",
+              "location": [
+                52.736652,
+                41.48815
+              ]
+            },
+            "time": "09:40"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 179,
+              "name": "Василиса",
+              "location": [
+                52.735589,
+                41.468953
+              ]
+            },
+            "time": "09:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 128,
+              "name": "Денис",
+              "location": [
+                52.746093,
+                41.43642
+              ]
+            },
+            "time": "09:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 107,
+              "name": "Ольга",
+              "location": [
+                52.755276,
+                41.415989
+              ]
+            },
+            "time": "09:53"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 154,
+              "name": "Руслан",
+              "location": [
+                52.755471,
+                41.425587
+              ]
+            },
+            "time": "09:56"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 2,
+              "location": [
+                52.754064,
+                41.454011
+              ]
+            },
+            "time": "10:00"
+          }
+        ],
+        "distance": "14 km (13101 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 131.01
+      },
+      "vehicle_3": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "09:15"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 116,
+              "name": "Кирилл",
+              "location": [
+                52.715882,
+                41.408577
+              ]
+            },
+            "time": "09:25"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 229,
+              "name": "Серафима",
+              "location": [
+                52.715435,
+                41.407464
+              ]
+            },
+            "time": "09:26"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 175,
+              "name": "Вера",
+              "location": [
+                52.716298,
+                41.40817
+              ]
+            },
+            "time": "09:27"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 310,
+              "name": "Соломон",
+              "location": [
+                52.725663,
+                41.418645
+              ]
+            },
+            "time": "09:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 252,
+              "name": "Ислам",
+              "location": [
+                52.757086,
+                41.488048
+              ]
+            },
+            "time": "09:47"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 2,
+              "location": [
+                52.754064,
+                41.454011
+              ]
+            },
+            "time": "10:00"
+          }
+        ],
+        "distance": "20 km (19585 m)",
+        "time": "45 minutes",
+        "cost": 195.85
+      },
+      "vehicle_4": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "08:56"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 311,
+              "name": "Жасмина",
+              "location": [
+                52.705568,
+                41.467646
+              ]
+            },
+            "time": "09:05"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 234,
+              "name": "Самир",
+              "location": [
+                52.705526,
+                41.4856
+              ]
+            },
+            "time": "09:11"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 164,
+              "name": "Вячеслав",
+              "location": [
+                52.697092,
+                41.475508
+              ]
+            },
+            "time": "09:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 125,
+              "name": "Ксения",
+              "location": [
+                52.696828,
+                41.475223
+              ]
+            },
+            "time": "09:19"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 212,
+              "name": "Игнат",
+              "location": [
+                52.696608,
+                41.464447
+              ]
+            },
+            "time": "09:22"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 238,
+              "name": "Тамерлан",
+              "location": [
+                52.706523,
+                41.458222
+              ]
+            },
+            "time": "09:25"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 129,
+              "name": "Вероника",
+              "location": [
+                52.706716,
+                41.434924
+              ]
+            },
+            "time": "09:33"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 115,
+              "name": "Юлия",
+              "location": [
+                52.695828,
+                41.408668
+              ]
+            },
+            "time": "09:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 169,
+              "name": "Милана",
+              "location": [
+                52.696338,
+                41.406541
+              ]
+            },
+            "time": "09:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 259,
+              "name": "Сарра",
+              "location": [
+                52.716223,
+                41.397582
+              ]
+            },
+            "time": "09:50"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 2,
+              "location": [
+                52.754064,
+                41.454011
+              ]
+            },
+            "time": "10:00"
+          }
+        ],
+        "distance": "34 km (33130 m)",
+        "time": "1 hours, 4 minutes",
+        "cost": 331.3
+      },
+      "vehicle_5": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "09:14"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 246,
+              "name": "Рамиль",
+              "location": [
+                52.74628,
+                41.45593
+              ]
+            },
+            "time": "09:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 227,
+              "name": "Агния",
+              "location": [
+                52.736827,
+                41.43694
+              ]
+            },
+            "time": "09:21"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 122,
+              "name": "Тимофей",
+              "location": [
+                52.746207,
+                41.396324
+              ]
+            },
+            "time": "09:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 148,
+              "name": "Игорь",
+              "location": [
+                52.756064,
+                41.394648
+              ]
+            },
+            "time": "09:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 232,
+              "name": "Ибрагим",
+              "location": [
+                52.747127,
+                41.397926
+              ]
+            },
+            "time": "09:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 178,
+              "name": "Сава",
+              "location": [
+                52.755574,
+                41.396469
+              ]
+            },
+            "time": "09:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 111,
+              "name": "Татьяна",
+              "location": [
+                52.764086,
+                41.389109
+              ]
+            },
+            "time": "09:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 239,
+              "name": "Лейла",
+              "location": [
+                52.766684,
+                41.394075
+              ]
+            },
+            "time": "09:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 247,
+              "name": "Самира",
+              "location": [
+                52.766794,
+                41.406386
+              ]
+            },
+            "time": "09:50"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 290,
+              "name": "Милан",
+              "location": [
+                52.755769,
+                41.416537
+              ]
+            },
+            "time": "09:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 2,
+              "location": [
+                52.754064,
+                41.454011
+              ]
+            },
+            "time": "10:00"
+          }
+        ],
+        "distance": "24 km (23331 m)",
+        "time": "46 minutes",
+        "cost": 233.31
+      }
+    },
+    "total_distance": "108 km (107728 m)",
+    "total_time": "5 hours, 35 minutes",
+    "total_cost": 1077.28
+  },
+  "platform_3": {
+    "vehicles": {
+      "vehicle_1": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:25"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 189,
+              "name": "Майя",
+              "location": [
+                52.736805,
+                41.487511
+              ]
+            },
+            "time": "07:30"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 134,
+              "name": "Борис",
+              "location": [
+                52.715499,
+                41.477709
+              ]
+            },
+            "time": "07:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 221,
+              "name": "Люция",
+              "location": [
+                52.726016,
+                41.467508
+              ]
+            },
+            "time": "07:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 132,
+              "name": "Павел",
+              "location": [
+                52.716606,
+                41.434562
+              ]
+            },
+            "time": "07:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 303,
+              "name": "Сабина",
+              "location": [
+                52.726192,
+                41.48818
+              ]
+            },
+            "time": "07:57"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 3,
+              "location": [
+                52.729204,
+                41.480243
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "20 km (19186 m)",
+        "time": "35 minutes",
+        "cost": 191.86
+      },
+      "vehicle_2": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 155,
+              "name": "Инна",
+              "location": [
+                52.735786,
+                41.444024
+              ]
+            },
+            "time": "07:21"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 218,
+              "name": "Назар",
+              "location": [
+                52.75576,
+                41.435972
+              ]
+            },
+            "time": "07:27"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 233,
+              "name": "Ая",
+              "location": [
+                52.756173,
+                41.435649
+              ]
+            },
+            "time": "07:28"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 137,
+              "name": "Любовь",
+              "location": [
+                52.756527,
+                41.42547
+              ]
+            },
+            "time": "07:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 101,
+              "name": "Анастасия",
+              "location": [
+                52.758649,
+                41.424128
+              ]
+            },
+            "time": "07:33"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 267,
+              "name": "Дина",
+              "location": [
+                52.765664,
+                41.404793
+              ]
+            },
+            "time": "07:38"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 281,
+              "name": "Наталия",
+              "location": [
+                52.76651,
+                41.408648
+              ]
+            },
+            "time": "07:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 296,
+              "name": "Фархад",
+              "location": [
+                52.766071,
+                41.415163
+              ]
+            },
+            "time": "07:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 282,
+              "name": "Эльдар",
+              "location": [
+                52.765806,
+                41.416672
+              ]
+            },
+            "time": "07:46"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 184,
+              "name": "Даниил",
+              "location": [
+                52.74695,
+                41.443957
+              ]
+            },
+            "time": "07:52"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 3,
+              "location": [
+                52.729204,
+                41.480243
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "22 km (21938 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 219.38
+      },
+      "vehicle_3": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:12"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 198,
+              "name": "Платон",
+              "location": [
+                52.716668,
+                41.458739
+              ]
+            },
+            "time": "07:20"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 124,
+              "name": "Роман",
+              "location": [
+                52.705374,
+                41.466457
+              ]
+            },
+            "time": "07:23"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 113,
+              "name": "Виктория",
+              "location": [
+                52.697129,
+                41.477904
+              ]
+            },
+            "time": "07:26"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 123,
+              "name": "Марина",
+              "location": [
+                52.695892,
+                41.456199
+              ]
+            },
+            "time": "07:29"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 109,
+              "name": "Наталья",
+              "location": [
+                52.707437,
+                41.423813
+              ]
+            },
+            "time": "07:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 211,
+              "name": "Эрика",
+              "location": [
+                52.705977,
+                41.418803
+              ]
+            },
+            "time": "07:38"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 284,
+              "name": "Януш",
+              "location": [
+                52.706126,
+                41.416036
+              ]
+            },
+            "time": "07:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 262,
+              "name": "Мурад",
+              "location": [
+                52.696532,
+                41.395319
+              ]
+            },
+            "time": "07:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 131,
+              "name": "Светлана",
+              "location": [
+                52.695867,
+                41.407559
+              ]
+            },
+            "time": "07:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 268,
+              "name": "Кирюша",
+              "location": [
+                52.696208,
+                41.438543
+              ]
+            },
+            "time": "07:50"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 3,
+              "location": [
+                52.729204,
+                41.480243
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "30 km (29851 m)",
+        "time": "48 minutes",
+        "cost": 298.51
+      },
+      "vehicle_4": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:08"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 168,
+              "name": "Матвей",
+              "location": [
+                52.766697,
+                41.47602
+              ]
+            },
+            "time": "07:15"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 119,
+              "name": "Екатерина",
+              "location": [
+                52.76622,
+                41.438042
+              ]
+            },
+            "time": "07:20"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 285,
+              "name": "Эльмира",
+              "location": [
+                52.755946,
+                41.406551
+              ]
+            },
+            "time": "07:27"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 108,
+              "name": "Сергей",
+              "location": [
+                52.736406,
+                41.38303
+              ]
+            },
+            "time": "07:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 144,
+              "name": "Григорий",
+              "location": [
+                52.736591,
+                41.405651
+              ]
+            },
+            "time": "07:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 199,
+              "name": "Регина",
+              "location": [
+                52.745607,
+                41.407106
+              ]
+            },
+            "time": "07:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 243,
+              "name": "Нонна",
+              "location": [
+                52.746464,
+                41.408004
+              ]
+            },
+            "time": "07:46"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 3,
+              "location": [
+                52.729204,
+                41.480243
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "29 km (28765 m)",
+        "time": "52 minutes",
+        "cost": 287.65
+      },
+      "vehicle_5": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:17"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 103,
+              "name": "Мария",
+              "location": [
+                52.725003,
+                41.407828
+              ]
+            },
+            "time": "07:28"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 241,
+              "name": "Роза",
+              "location": [
+                52.726708,
+                41.398306
+              ]
+            },
+            "time": "07:32"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 249,
+              "name": "Злата",
+              "location": [
+                52.725421,
+                41.397694
+              ]
+            },
+            "time": "07:33"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 248,
+              "name": "Алан",
+              "location": [
+                52.716344,
+                41.408238
+              ]
+            },
+            "time": "07:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 226,
+              "name": "Вениамин",
+              "location": [
+                52.706435,
+                41.397853
+              ]
+            },
+            "time": "07:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 260,
+              "name": "Нурлан",
+              "location": [
+                52.706016,
+                41.404921
+              ]
+            },
+            "time": "07:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 196,
+              "name": "Альберт",
+              "location": [
+                52.71579,
+                41.423957
+              ]
+            },
+            "time": "07:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 209,
+              "name": "Аврора",
+              "location": [
+                52.725851,
+                41.425171
+              ]
+            },
+            "time": "07:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 307,
+              "name": "Рената",
+              "location": [
+                52.726255,
+                41.434773
+              ]
+            },
+            "time": "07:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 152,
+              "name": "Валерий",
+              "location": [
+                52.726327,
+                41.445191
+              ]
+            },
+            "time": "07:53"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 3,
+              "location": [
+                52.729204,
+                41.480243
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "24 km (23661 m)",
+        "time": "43 minutes",
+        "cost": 236.61
+      }
+    },
+    "total_distance": "124 km (123401 m)",
+    "total_time": "4 hours, 28 minutes",
+    "total_cost": 1234.01
+  },
+  "platform_4": {
+    "vehicles": {
+      "vehicle_1": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "06:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 182,
+              "name": "Марк",
+              "location": [
+                52.736132,
+                41.455445
+              ]
+            },
+            "time": "06:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 188,
+              "name": "Тихон",
+              "location": [
+                52.735907,
+                41.455339
+              ]
+            },
+            "time": "06:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 153,
+              "name": "Алёна",
+              "location": [
+                52.74673,
+                41.446144
+              ]
+            },
+            "time": "06:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 214,
+              "name": "Савва",
+              "location": [
+                52.745964,
+                41.445536
+              ]
+            },
+            "time": "06:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 141,
+              "name": "Зинаида",
+              "location": [
+                52.736489,
+                41.438971
+              ]
+            },
+            "time": "06:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 112,
+              "name": "Артём",
+              "location": [
+                52.736587,
+                41.426436
+              ]
+            },
+            "time": "06:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 256,
+              "name": "Камиль",
+              "location": [
+                52.745453,
+                41.424852
+              ]
+            },
+            "time": "06:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 222,
+              "name": "Дамир",
+              "location": [
+                52.736297,
+                41.408148
+              ]
+            },
+            "time": "06:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 4,
+              "location": [
+                52.735313,
+                41.40239
+              ]
+            },
+            "time": "07:00"
+          }
+        ],
+        "distance": "14 km (13050 m)",
+        "time": "29 minutes",
+        "cost": 130.5
+      },
+      "vehicle_2": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "06:31"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 257,
+              "name": "Мелания",
+              "location": [
+                52.745477,
+                41.48744
+              ]
+            },
+            "time": "06:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 291,
+              "name": "Рая",
+              "location": [
+                52.736391,
+                41.484854
+              ]
+            },
+            "time": "06:40"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 173,
+              "name": "Карина",
+              "location": [
+                52.726211,
+                41.436913
+              ]
+            },
+            "time": "06:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 160,
+              "name": "Илья",
+              "location": [
+                52.716598,
+                41.437003
+              ]
+            },
+            "time": "06:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 205,
+              "name": "Мира",
+              "location": [
+                52.715608,
+                41.435037
+              ]
+            },
+            "time": "06:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 156,
+              "name": "Олег",
+              "location": [
+                52.715724,
+                41.428805
+              ]
+            },
+            "time": "06:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 294,
+              "name": "Фарид",
+              "location": [
+                52.716144,
+                41.427563
+              ]
+            },
+            "time": "06:52"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 170,
+              "name": "Геннадий",
+              "location": [
+                52.716504,
+                41.408913
+              ]
+            },
+            "time": "06:56"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 4,
+              "location": [
+                52.735313,
+                41.40239
+              ]
+            },
+            "time": "07:00"
+          }
+        ],
+        "distance": "16 km (15147 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 151.47
+      },
+      "vehicle_3": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "06:19"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 140,
+              "name": "Юрий",
+              "location": [
+                52.755787,
+                41.466385
+              ]
+            },
+            "time": "06:25"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 187,
+              "name": "Снежана",
+              "location": [
+                52.756508,
+                41.487527
+              ]
+            },
+            "time": "06:29"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 224,
+              "name": "Демид",
+              "location": [
+                52.766608,
+                41.468893
+              ]
+            },
+            "time": "06:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 201,
+              "name": "Ева",
+              "location": [
+                52.766051,
+                41.4739
+              ]
+            },
+            "time": "06:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 185,
+              "name": "София",
+              "location": [
+                52.766613,
+                41.474074
+              ]
+            },
+            "time": "06:38"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 304,
+              "name": "Герман",
+              "location": [
+                52.765702,
+                41.477323
+              ]
+            },
+            "time": "06:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 102,
+              "name": "Максим",
+              "location": [
+                52.75179,
+                41.435926
+              ]
+            },
+            "time": "06:48"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 206,
+              "name": "Яков",
+              "location": [
+                52.756976,
+                41.426768
+              ]
+            },
+            "time": "06:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 306,
+              "name": "Эдгар",
+              "location": [
+                52.756331,
+                41.417649
+              ]
+            },
+            "time": "06:53"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 217,
+              "name": "Кристина",
+              "location": [
+                52.757041,
+                41.41609
+              ]
+            },
+            "time": "06:54"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 4,
+              "location": [
+                52.735313,
+                41.40239
+              ]
+            },
+            "time": "07:00"
+          }
+        ],
+        "distance": "21 km (20610 m)",
+        "time": "41 minutes",
+        "cost": 206.1
+      },
+      "vehicle_4": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "06:14"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 269,
+              "name": "Асия",
+              "location": [
+                52.727055,
+                41.487621
+              ]
+            },
+            "time": "06:22"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 161,
+              "name": "Лариса",
+              "location": [
+                52.72645,
+                41.486757
+              ]
+            },
+            "time": "06:23"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 139,
+              "name": "Алиса",
+              "location": [
+                52.715368,
+                41.446377
+              ]
+            },
+            "time": "06:32"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 250,
+              "name": "Адиль",
+              "location": [
+                52.695403,
+                41.435475
+              ]
+            },
+            "time": "06:36"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 180,
+              "name": "Анатолий",
+              "location": [
+                52.695464,
+                41.417637
+              ]
+            },
+            "time": "06:40"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 231,
+              "name": "Ярослава",
+              "location": [
+                52.695529,
+                41.396625
+              ]
+            },
+            "time": "06:44"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 242,
+              "name": "Шамиль",
+              "location": [
+                52.71575,
+                41.394231
+              ]
+            },
+            "time": "06:49"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 258,
+              "name": "Рамзан",
+              "location": [
+                52.716575,
+                41.40687
+              ]
+            },
+            "time": "06:53"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 293,
+              "name": "Ядвига",
+              "location": [
+                52.725927,
+                41.405139
+              ]
+            },
+            "time": "06:57"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 4,
+              "location": [
+                52.735313,
+                41.40239
+              ]
+            },
+            "time": "07:00"
+          }
+        ],
+        "distance": "24 km (23607 m)",
+        "time": "46 minutes",
+        "cost": 236.07
+      },
+      "vehicle_5": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "05:48"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 159,
+              "name": "Эльвира",
+              "location": [
+                52.715776,
+                41.475018
+              ]
+            },
+            "time": "05:56"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 265,
+              "name": "Аурика",
+              "location": [
+                52.717116,
+                41.486332
+              ]
+            },
+            "time": "06:02"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 120,
+              "name": "Михаил",
+              "location": [
+                52.726732,
+                41.476193
+              ]
+            },
+            "time": "06:09"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 213,
+              "name": "Александра",
+              "location": [
+                52.695786,
+                41.46448
+              ]
+            },
+            "time": "06:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 190,
+              "name": "Всеволод",
+              "location": [
+                52.706673,
+                41.487637
+              ]
+            },
+            "time": "06:22"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 150,
+              "name": "Тимур",
+              "location": [
+                52.695938,
+                41.457364
+              ]
+            },
+            "time": "06:27"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 142,
+              "name": "Виктор",
+              "location": [
+                52.696807,
+                41.454481
+              ]
+            },
+            "time": "06:28"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 289,
+              "name": "Сильвия",
+              "location": [
+                52.765845,
+                41.456786
+              ]
+            },
+            "time": "06:41"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 183,
+              "name": "Надежда",
+              "location": [
+                52.75688,
+                41.398746
+              ]
+            },
+            "time": "06:50"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 157,
+              "name": "Диана",
+              "location": [
+                52.745763,
+                41.414021
+              ]
+            },
+            "time": "06:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 4,
+              "location": [
+                52.735313,
+                41.40239
+              ]
+            },
+            "time": "07:00"
+          }
+        ],
+        "distance": "45 km (44554 m)",
+        "time": "1 hours, 12 minutes",
+        "cost": 445.54
+      }
+    },
+    "total_distance": "117 km (116968 m)",
+    "total_time": "4 hours, 38 minutes",
+    "total_cost": 1169.68
+  },
+  "platform_5": {
+    "vehicles": {
+      "vehicle_1": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:32"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 280,
+              "name": "Влад",
+              "location": [
+                52.73683,
+                41.484339
+              ]
+            },
+            "time": "07:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 146,
+              "name": "Станислав",
+              "location": [
+                52.727027,
+                41.475355
+              ]
+            },
+            "time": "07:43"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 278,
+              "name": "Ян",
+              "location": [
+                52.727071,
+                41.468433
+              ]
+            },
+            "time": "07:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 191,
+              "name": "Эвелина",
+              "location": [
+                52.727118,
+                41.466491
+              ]
+            },
+            "time": "07:46"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 276,
+              "name": "Эрик",
+              "location": [
+                52.727089,
+                41.435706
+              ]
+            },
+            "time": "07:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 158,
+              "name": "Антон",
+              "location": [
+                52.725953,
+                41.435249
+              ]
+            },
+            "time": "07:52"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 162,
+              "name": "Арсений",
+              "location": [
+                52.726998,
+                41.428212
+              ]
+            },
+            "time": "07:53"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 151,
+              "name": "Агата",
+              "location": [
+                52.726501,
+                41.444702
+              ]
+            },
+            "time": "07:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 5,
+              "location": [
+                52.734066,
+                41.463158
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "13 km (12466 m)",
+        "time": "28 minutes",
+        "cost": 124.66
+      },
+      "vehicle_2": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:09"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 292,
+              "name": "Роберт",
+              "location": [
+                52.756987,
+                41.464944
+              ]
+            },
+            "time": "07:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 286,
+              "name": "Гордей",
+              "location": [
+                52.755519,
+                41.458683
+              ]
+            },
+            "time": "07:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 117,
+              "name": "Ирина",
+              "location": [
+                52.756048,
+                41.486005
+              ]
+            },
+            "time": "07:23"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 279,
+              "name": "Фируза",
+              "location": [
+                52.766321,
+                41.454847
+              ]
+            },
+            "time": "07:29"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 204,
+              "name": "Глеб",
+              "location": [
+                52.756437,
+                41.418341
+              ]
+            },
+            "time": "07:35"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 208,
+              "name": "Семён",
+              "location": [
+                52.756035,
+                41.395046
+              ]
+            },
+            "time": "07:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 176,
+              "name": "Захар",
+              "location": [
+                52.766571,
+                41.405042
+              ]
+            },
+            "time": "07:43"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 200,
+              "name": "Мирон",
+              "location": [
+                52.766858,
+                41.415696
+              ]
+            },
+            "time": "07:47"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 272,
+              "name": "Тагир",
+              "location": [
+                52.755671,
+                41.436414
+              ]
+            },
+            "time": "07:50"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 275,
+              "name": "Раяна",
+              "location": [
+                52.746218,
+                41.44553
+              ]
+            },
+            "time": "07:55"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 5,
+              "location": [
+                52.734066,
+                41.463158
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "30 km (29291 m)",
+        "time": "1 hours, 30 minutes",
+        "cost": 292.91
+      },
+      "vehicle_3": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:07"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 138,
+              "name": "Лев",
+              "location": [
+                52.725801,
+                41.404554
+              ]
+            },
+            "time": "07:18"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 197,
+              "name": "Лилия",
+              "location": [
+                52.726627,
+                41.406825
+              ]
+            },
+            "time": "07:21"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 163,
+              "name": "Эмилия",
+              "location": [
+                52.716444,
+                41.426628
+              ]
+            },
+            "time": "07:28"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 126,
+              "name": "Владислав",
+              "location": [
+                52.696462,
+                41.456743
+              ]
+            },
+            "time": "07:37"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 110,
+              "name": "Андрей",
+              "location": [
+                52.698628,
+                41.472585
+              ]
+            },
+            "time": "07:40"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 288,
+              "name": "Святослав",
+              "location": [
+                52.705394,
+                41.474938
+              ]
+            },
+            "time": "07:42"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 166,
+              "name": "Константин",
+              "location": [
+                52.706322,
+                41.485406
+              ]
+            },
+            "time": "07:46"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 210,
+              "name": "Лука",
+              "location": [
+                52.707154,
+                41.48761
+              ]
+            },
+            "time": "07:48"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 300,
+              "name": "Джамал",
+              "location": [
+                52.707013,
+                41.464364
+              ]
+            },
+            "time": "07:51"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 135,
+              "name": "Нина",
+              "location": [
+                52.715705,
+                41.465948
+              ]
+            },
+            "time": "07:54"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 5,
+              "location": [
+                52.734066,
+                41.463158
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "27 km (26847 m)",
+        "time": "53 minutes",
+        "cost": 268.47
+      },
+      "vehicle_4": {
+        "routes": [
+          {
+            "type": "depot",
+            "entry": {
+              "id": 1,
+              "location": [
+                52.74436,
+                41.478213
+              ]
+            },
+            "time": "07:02"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 271,
+              "name": "Галия",
+              "location": [
+                52.74697,
+                41.417744
+              ]
+            },
+            "time": "07:11"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 216,
+              "name": "Марат",
+              "location": [
+                52.747152,
+                41.406045
+              ]
+            },
+            "time": "07:16"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 192,
+              "name": "Прохор",
+              "location": [
+                52.735848,
+                41.397208
+              ]
+            },
+            "time": "07:23"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 295,
+              "name": "Олеся",
+              "location": [
+                52.705997,
+                41.40721
+              ]
+            },
+            "time": "07:30"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 298,
+              "name": "Микаэл",
+              "location": [
+                52.696681,
+                41.416759
+              ]
+            },
+            "time": "07:34"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 305,
+              "name": "Таисия",
+              "location": [
+                52.695797,
+                41.428934
+              ]
+            },
+            "time": "07:39"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 228,
+              "name": "Амир",
+              "location": [
+                52.716537,
+                41.456655
+              ]
+            },
+            "time": "07:45"
+          },
+          {
+            "type": "user",
+            "entry": {
+              "id": 207,
+              "name": "Эльза",
+              "location": [
+                52.716309,
+                41.485499
+              ]
+            },
+            "time": "07:53"
+          },
+          {
+            "type": "platform",
+            "entry": {
+              "id": 5,
+              "location": [
+                52.734066,
+                41.463158
+              ]
+            },
+            "time": "08:00"
+          }
+        ],
+        "distance": "31 km (30880 m)",
+        "time": "58 minutes",
+        "cost": 308.8
+      }
+    },
+    "total_distance": "100 km (99484 m)",
+    "total_time": "3 hours, 49 minutes",
+    "total_cost": 994.84
+  }
+}

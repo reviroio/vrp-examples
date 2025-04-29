@@ -1,0 +1,13 @@
+[
+  {
+    "id": "Warehouse 1",
+    "location": [52.743628, 41.424363],
+    "goods": {
+      "smartphone": {"count": 1000, "weight": 1},
+      "laptop": {"count": 1000, "weight": 1},
+      "washing machine": {"count": 50, "weight": 5},
+      "tv": {"count": 50, "weight": 3},
+      "bicycle": {"count": 100, "weight": 4}
+    }
+  }
+]
