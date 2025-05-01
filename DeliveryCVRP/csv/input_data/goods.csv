@@ -1,0 +1,6 @@
+id,location,title,count,weight
+Warehouse 1,"52.743628,41.424363",smartphone,1000,1
+Warehouse 1,"52.743628,41.424363",laptop,1000,1
+Warehouse 1,"52.743628,41.424363",washing machine,50,5
+Warehouse 1,"52.743628,41.424363",tv,50,3
+Warehouse 1,"52.743628,41.424363",bicycle,100,4

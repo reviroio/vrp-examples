@@ -1,0 +1,2933 @@
+{
+  "objective": 372914,
+  "num_vehicles": 10,
+  "total_distance": 0,
+  "total_time": 0,
+  "nodes": [
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "04:59",
+          "06:59"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 18",
+          "location": [
+            52.746782,
+            41.426947
+          ],
+          "goods": {
+            "washing machine": 3,
+            "bicycle": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "07:00",
+            "08:00"
+          ]
+        },
+        "time": [
+          "07:00",
+          "07:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 46",
+          "location": [
+            52.747116,
+            41.487198
+          ],
+          "goods": {
+            "laptop": 1,
+            "smartphone": 1,
+            "tv": 3
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "07:00",
+          "07:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 81",
+          "location": [
+            52.72584,
+            41.42507
+          ],
+          "goods": {
+            "laptop": 1,
+            "bicycle": 3,
+            "washing machine": 3,
+            "smartphone": 1,
+            "tv": 1
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:30",
+          "09:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 77",
+          "location": [
+            52.726814,
+            41.448403
+          ],
+          "goods": {
+            "washing machine": 3,
+            "smartphone": 2,
+            "laptop": 1,
+            "bicycle": 1
+          },
+          "time_windows": [
+            "09:30",
+            "10:30"
+          ]
+        },
+        "time": [
+          "09:30",
+          "10:27"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 59",
+          "location": [
+            52.72691,
+            41.437281
+          ],
+          "goods": {
+            "smartphone": 1,
+            "laptop": 3
+          },
+          "time_windows": [
+            "09:30",
+            "10:30"
+          ]
+        },
+        "time": [
+          "09:33",
+          "10:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 9",
+          "location": [
+            52.716227,
+            41.418524
+          ],
+          "goods": {
+            "laptop": 2,
+            "bicycle": 3,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "11:30",
+            "12:30"
+          ]
+        },
+        "time": [
+          "11:30",
+          "11:56"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 86",
+          "location": [
+            52.706097,
+            41.42591
+          ],
+          "goods": {
+            "washing machine": 1,
+            "laptop": 2,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "11:00",
+            "12:00"
+          ]
+        },
+        "time": [
+          "11:34",
+          "12:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 75",
+          "location": [
+            52.716153,
+            41.406683
+          ],
+          "goods": {
+            "tv": 3,
+            "smartphone": 3,
+            "laptop": 2
+          },
+          "time_windows": [
+            "12:30",
+            "13:30"
+          ]
+        },
+        "time": [
+          "12:30",
+          "13:24"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 15",
+          "location": [
+            52.716201,
+            41.415721
+          ],
+          "goods": {
+            "tv": 1,
+            "washing machine": 3
+          },
+          "time_windows": [
+            "12:30",
+            "13:30"
+          ]
+        },
+        "time": [
+          "12:32",
+          "13:26"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 67",
+          "location": [
+            52.716068,
+            41.435824
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 1,
+            "washing machine": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "12:30",
+            "13:30"
+          ]
+        },
+        "time": [
+          "12:36",
+          "13:30"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "12:42",
+          "15:36"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "17:24",
+          "20:24"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 25",
+          "location": [
+            52.76575,
+            41.394116
+          ],
+          "goods": {
+            "bicycle": 1,
+            "laptop": 3,
+            "smartphone": 1,
+            "tv": 3
+          },
+          "time_windows": [
+            "19:30",
+            "20:30"
+          ]
+        },
+        "time": [
+          "19:30",
+          "20:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 69",
+          "location": [
+            52.746067,
+            41.42651
+          ],
+          "goods": {
+            "smartphone": 3,
+            "tv": 3,
+            "bicycle": 2,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "20:30",
+            "21:30"
+          ]
+        },
+        "time": [
+          "20:30",
+          "20:52"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 55",
+          "location": [
+            52.735755,
+            41.45489
+          ],
+          "goods": {
+            "washing machine": 1,
+            "bicycle": 2,
+            "smartphone": 3,
+            "laptop": 2,
+            "tv": 3
+          },
+          "time_windows": [
+            "20:30",
+            "21:30"
+          ]
+        },
+        "time": [
+          "20:35",
+          "20:57"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 8",
+          "location": [
+            52.746124,
+            41.447874
+          ],
+          "goods": {
+            "tv": 1,
+            "bicycle": 2,
+            "laptop": 1,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "20:00",
+            "21:00"
+          ]
+        },
+        "time": [
+          "20:38",
+          "21:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 51",
+          "location": [
+            52.755893,
+            41.434971
+          ],
+          "goods": {
+            "washing machine": 3,
+            "bicycle": 1,
+            "smartphone": 2,
+            "tv": 3
+          },
+          "time_windows": [
+            "20:30",
+            "21:30"
+          ]
+        },
+        "time": [
+          "20:43",
+          "21:30"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "20:48",
+          "23:35"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "14:59",
+          "17:43"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 54",
+          "location": [
+            52.74544,
+            41.42491
+          ],
+          "goods": {
+            "tv": 1,
+            "smartphone": 2,
+            "bicycle": 1
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:00",
+          "17:44"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 34",
+          "location": [
+            52.726641,
+            41.465113
+          ],
+          "goods": {
+            "smartphone": 1,
+            "laptop": 2,
+            "bicycle": 1
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:06",
+          "17:50"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 87",
+          "location": [
+            52.766428,
+            41.43737
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 3,
+            "bicycle": 1,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "17:30",
+            "18:30"
+          ]
+        },
+        "time": [
+          "17:30",
+          "17:57"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 90",
+          "location": [
+            52.755556,
+            41.446419
+          ],
+          "goods": {
+            "washing machine": 2,
+            "bicycle": 2,
+            "smartphone": 3,
+            "tv": 1
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:33",
+          "18:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 31",
+          "location": [
+            52.74669,
+            41.458204
+          ],
+          "goods": {
+            "tv": 1,
+            "washing machine": 3,
+            "bicycle": 1,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "19:30",
+            "20:30"
+          ]
+        },
+        "time": [
+          "19:30",
+          "19:54"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 6",
+          "location": [
+            52.736649,
+            41.423851
+          ],
+          "goods": {
+            "smartphone": 3,
+            "bicycle": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "19:00",
+            "20:00"
+          ]
+        },
+        "time": [
+          "19:36",
+          "20:00"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "19:39",
+          "22:03"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "04:25",
+          "06:26"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 89",
+          "location": [
+            52.726531,
+            41.465337
+          ],
+          "goods": {
+            "washing machine": 2,
+            "smartphone": 3,
+            "tv": 2
+          },
+          "time_windows": [
+            "06:30",
+            "07:30"
+          ]
+        },
+        "time": [
+          "06:30",
+          "06:31"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 72",
+          "location": [
+            52.725924,
+            41.445375
+          ],
+          "goods": {
+            "laptop": 3,
+            "smartphone": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:33",
+          "06:34"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 35",
+          "location": [
+            52.70578,
+            41.40692
+          ],
+          "goods": {
+            "smartphone": 1,
+            "washing machine": 3,
+            "bicycle": 3,
+            "tv": 2
+          },
+          "time_windows": [
+            "06:30",
+            "07:30"
+          ]
+        },
+        "time": [
+          "06:39",
+          "06:40"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 13",
+          "location": [
+            52.706711,
+            41.407492
+          ],
+          "goods": {
+            "tv": 1,
+            "bicycle": 2,
+            "laptop": 3,
+            "washing machine": 3
+          },
+          "time_windows": [
+            "06:30",
+            "07:30"
+          ]
+        },
+        "time": [
+          "06:41",
+          "06:42"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 66",
+          "location": [
+            52.726749,
+            41.414328
+          ],
+          "goods": {
+            "washing machine": 1,
+            "bicycle": 3,
+            "laptop": 3
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:48",
+          "06:49"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 28",
+          "location": [
+            52.736616,
+            41.415301
+          ],
+          "goods": {
+            "smartphone": 2,
+            "tv": 2,
+            "laptop": 3
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:55",
+          "06:56"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 4",
+          "location": [
+            52.736892,
+            41.405755
+          ],
+          "goods": {
+            "washing machine": 3,
+            "laptop": 2,
+            "bicycle": 2,
+            "tv": 1
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:59",
+          "07:00"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "07:04",
+          "09:05"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "06:23",
+          "09:23"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 53",
+          "location": [
+            52.736188,
+            41.477807
+          ],
+          "goods": {
+            "laptop": 1,
+            "washing machine": 2,
+            "bicycle": 2
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:30",
+          "09:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 83",
+          "location": [
+            52.736591,
+            41.487089
+          ],
+          "goods": {
+            "washing machine": 1,
+            "bicycle": 1,
+            "laptop": 2
+          },
+          "time_windows": [
+            "09:30",
+            "10:30"
+          ]
+        },
+        "time": [
+          "09:30",
+          "10:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 80",
+          "location": [
+            52.74656,
+            41.464591
+          ],
+          "goods": {
+            "smartphone": 1,
+            "washing machine": 3,
+            "bicycle": 1,
+            "tv": 2
+          },
+          "time_windows": [
+            "10:00",
+            "11:00"
+          ]
+        },
+        "time": [
+          "10:00",
+          "10:55"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 32",
+          "location": [
+            52.746384,
+            41.45558
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 3,
+            "washing machine": 3
+          },
+          "time_windows": [
+            "10:00",
+            "11:00"
+          ]
+        },
+        "time": [
+          "10:57",
+          "11:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 44",
+          "location": [
+            52.756012,
+            41.44889
+          ],
+          "goods": {
+            "smartphone": 3,
+            "tv": 1
+          },
+          "time_windows": [
+            "13:00",
+            "14:00"
+          ]
+        },
+        "time": [
+          "13:00",
+          "13:03"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 94",
+          "location": [
+            52.745749,
+            41.448159
+          ],
+          "goods": {
+            "laptop": 3,
+            "smartphone": 3,
+            "bicycle": 2,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "13:00",
+            "14:00"
+          ]
+        },
+        "time": [
+          "13:02",
+          "14:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 82",
+          "location": [
+            52.76696,
+            41.437057
+          ],
+          "goods": {
+            "laptop": 1,
+            "smartphone": 2,
+            "washing machine": 1
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:00",
+          "15:14"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 40",
+          "location": [
+            52.745793,
+            41.465
+          ],
+          "goods": {
+            "tv": 3,
+            "bicycle": 2,
+            "laptop": 2
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:09",
+          "15:23"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 65",
+          "location": [
+            52.737083,
+            41.475853
+          ],
+          "goods": {
+            "laptop": 2,
+            "bicycle": 2,
+            "smartphone": 3,
+            "washing machine": 3
+          },
+          "time_windows": [
+            "14:30",
+            "15:30"
+          ]
+        },
+        "time": [
+          "15:26",
+          "15:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 63",
+          "location": [
+            52.736293,
+            41.48882
+          ],
+          "goods": {
+            "laptop": 2,
+            "washing machine": 2,
+            "bicycle": 1
+          },
+          "time_windows": [
+            "17:30",
+            "18:30"
+          ]
+        },
+        "time": [
+          "17:30",
+          "17:34"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 91",
+          "location": [
+            52.72551,
+            41.485943
+          ],
+          "goods": {
+            "washing machine": 2,
+            "laptop": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "17:30",
+            "18:30"
+          ]
+        },
+        "time": [
+          "17:36",
+          "18:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 76",
+          "location": [
+            52.736666,
+            41.467452
+          ],
+          "goods": {
+            "bicycle": 3,
+            "laptop": 1,
+            "tv": 3,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "18:00",
+            "19:00"
+          ]
+        },
+        "time": [
+          "18:00",
+          "18:54"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 60",
+          "location": [
+            52.715834,
+            41.457519
+          ],
+          "goods": {
+            "bicycle": 2,
+            "tv": 1,
+            "smartphone": 1,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "18:00",
+            "19:00"
+          ]
+        },
+        "time": [
+          "18:06",
+          "19:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 73",
+          "location": [
+            52.725511,
+            41.454404
+          ],
+          "goods": {
+            "laptop": 1,
+            "bicycle": 2,
+            "smartphone": 3,
+            "tv": 2
+          },
+          "time_windows": [
+            "19:30",
+            "20:30"
+          ]
+        },
+        "time": [
+          "19:30",
+          "20:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 78",
+          "location": [
+            52.715839,
+            41.466543
+          ],
+          "goods": {
+            "bicycle": 1,
+            "washing machine": 2,
+            "tv": 1,
+            "smartphone": 2
+          },
+          "time_windows": [
+            "20:00",
+            "21:00"
+          ]
+        },
+        "time": [
+          "20:00",
+          "21:00"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "20:08",
+          "23:08"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "06:22",
+          "09:18"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 39",
+          "location": [
+            52.766898,
+            41.484435
+          ],
+          "goods": {
+            "smartphone": 3,
+            "tv": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:30",
+          "09:26"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 45",
+          "location": [
+            52.766898,
+            41.46397
+          ],
+          "goods": {
+            "bicycle": 1,
+            "washing machine": 1,
+            "laptop": 1,
+            "tv": 1
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:34",
+          "09:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 3",
+          "location": [
+            52.766732,
+            41.457028
+          ],
+          "goods": {
+            "bicycle": 2,
+            "smartphone": 3,
+            "laptop": 2
+          },
+          "time_windows": [
+            "10:30",
+            "11:30"
+          ]
+        },
+        "time": [
+          "10:30",
+          "11:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 93",
+          "location": [
+            52.746178,
+            41.398941
+          ],
+          "goods": {
+            "smartphone": 2,
+            "washing machine": 2,
+            "laptop": 1,
+            "tv": 1
+          },
+          "time_windows": [
+            "12:30",
+            "13:30"
+          ]
+        },
+        "time": [
+          "12:30",
+          "12:44"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 56",
+          "location": [
+            52.766276,
+            41.416602
+          ],
+          "goods": {
+            "smartphone": 1,
+            "washing machine": 2,
+            "tv": 1,
+            "laptop": 2,
+            "bicycle": 1
+          },
+          "time_windows": [
+            "12:00",
+            "13:00"
+          ]
+        },
+        "time": [
+          "12:36",
+          "12:50"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 14",
+          "location": [
+            52.766042,
+            41.458254
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 1,
+            "bicycle": 3,
+            "washing machine": 1
+          },
+          "time_windows": [
+            "12:00",
+            "13:00"
+          ]
+        },
+        "time": [
+          "12:43",
+          "12:57"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 64",
+          "location": [
+            52.765848,
+            41.474269
+          ],
+          "goods": {
+            "laptop": 1,
+            "washing machine": 3,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "12:00",
+            "13:00"
+          ]
+        },
+        "time": [
+          "12:46",
+          "13:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 43",
+          "location": [
+            52.695381,
+            41.477734
+          ],
+          "goods": {
+            "bicycle": 1,
+            "tv": 3,
+            "laptop": 2
+          },
+          "time_windows": [
+            "14:30",
+            "15:30"
+          ]
+        },
+        "time": [
+          "14:30",
+          "14:39"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 50",
+          "location": [
+            52.725722,
+            41.475147
+          ],
+          "goods": {
+            "smartphone": 3,
+            "tv": 2,
+            "washing machine": 1,
+            "laptop": 1
+          },
+          "time_windows": [
+            "14:00",
+            "15:00"
+          ]
+        },
+        "time": [
+          "14:38",
+          "14:47"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 62",
+          "location": [
+            52.76643,
+            41.425889
+          ],
+          "goods": {
+            "bicycle": 3,
+            "washing machine": 3,
+            "tv": 3,
+            "laptop": 2
+          },
+          "time_windows": [
+            "14:00",
+            "15:00"
+          ]
+        },
+        "time": [
+          "14:51",
+          "15:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 71",
+          "location": [
+            52.766742,
+            41.467469
+          ],
+          "goods": {
+            "tv": 1,
+            "smartphone": 1,
+            "washing machine": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "14:30",
+            "15:30"
+          ]
+        },
+        "time": [
+          "15:02",
+          "15:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 79",
+          "location": [
+            52.766307,
+            41.434935
+          ],
+          "goods": {
+            "smartphone": 1,
+            "laptop": 1,
+            "tv": 3,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "16:30",
+            "17:30"
+          ]
+        },
+        "time": [
+          "16:30",
+          "17:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 11",
+          "location": [
+            52.756717,
+            41.475609
+          ],
+          "goods": {
+            "smartphone": 2,
+            "washing machine": 2,
+            "tv": 2
+          },
+          "time_windows": [
+            "17:30",
+            "18:30"
+          ]
+        },
+        "time": [
+          "17:30",
+          "18:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 29",
+          "location": [
+            52.76668,
+            41.474193
+          ],
+          "goods": {
+            "tv": 1,
+            "smartphone": 2,
+            "laptop": 2
+          },
+          "time_windows": [
+            "18:30",
+            "19:30"
+          ]
+        },
+        "time": [
+          "18:30",
+          "19:17"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 85",
+          "location": [
+            52.706727,
+            41.486486
+          ],
+          "goods": {
+            "bicycle": 2,
+            "washing machine": 3,
+            "laptop": 3
+          },
+          "time_windows": [
+            "18:30",
+            "19:30"
+          ]
+        },
+        "time": [
+          "18:43",
+          "19:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 26",
+          "location": [
+            52.695526,
+            41.477396
+          ],
+          "goods": {
+            "laptop": 1,
+            "bicycle": 2,
+            "washing machine": 1,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "19:00",
+            "20:00"
+          ]
+        },
+        "time": [
+          "19:00",
+          "20:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 16",
+          "location": [
+            52.695412,
+            41.487618
+          ],
+          "goods": {
+            "bicycle": 1,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "20:00",
+            "21:00"
+          ]
+        },
+        "time": [
+          "20:00",
+          "20:08"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 10",
+          "location": [
+            52.697154,
+            41.418885
+          ],
+          "goods": {
+            "washing machine": 2,
+            "smartphone": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "20:00",
+            "21:00"
+          ]
+        },
+        "time": [
+          "20:14",
+          "20:22"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 2",
+          "location": [
+            52.69611,
+            41.416908
+          ],
+          "goods": {
+            "smartphone": 2,
+            "washing machine": 1,
+            "tv": 1
+          },
+          "time_windows": [
+            "20:00",
+            "21:00"
+          ]
+        },
+        "time": [
+          "20:16",
+          "20:24"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 7",
+          "location": [
+            52.716464,
+            41.417606
+          ],
+          "goods": {
+            "tv": 3,
+            "smartphone": 2,
+            "bicycle": 2,
+            "washing machine": 1,
+            "laptop": 3
+          },
+          "time_windows": [
+            "19:30",
+            "20:30"
+          ]
+        },
+        "time": [
+          "20:22",
+          "20:30"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "20:29",
+          "22:37"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "03:56",
+          "06:53"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 98",
+          "location": [
+            52.73643,
+            41.458152
+          ],
+          "goods": {
+            "washing machine": 1,
+            "bicycle": 3,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:00",
+          "06:57"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 30",
+          "location": [
+            52.746833,
+            41.468776
+          ],
+          "goods": {
+            "tv": 3,
+            "laptop": 1,
+            "bicycle": 1,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "06:00",
+            "07:00"
+          ]
+        },
+        "time": [
+          "06:03",
+          "07:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 12",
+          "location": [
+            52.746692,
+            41.474143
+          ],
+          "goods": {
+            "washing machine": 2,
+            "laptop": 1,
+            "tv": 2,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "07:00",
+            "08:00"
+          ]
+        },
+        "time": [
+          "07:00",
+          "07:54"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 20",
+          "location": [
+            52.746694,
+            41.44517
+          ],
+          "goods": {
+            "laptop": 1,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "07:00",
+            "08:00"
+          ]
+        },
+        "time": [
+          "07:20",
+          "08:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 33",
+          "location": [
+            52.766991,
+            41.424162
+          ],
+          "goods": {
+            "bicycle": 2,
+            "washing machine": 2,
+            "tv": 1
+          },
+          "time_windows": [
+            "09:30",
+            "10:30"
+          ]
+        },
+        "time": [
+          "09:30",
+          "09:54"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 84",
+          "location": [
+            52.756931,
+            41.425184
+          ],
+          "goods": {
+            "tv": 2,
+            "washing machine": 3
+          },
+          "time_windows": [
+            "09:00",
+            "10:00"
+          ]
+        },
+        "time": [
+          "09:36",
+          "10:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 95",
+          "location": [
+            52.746752,
+            41.433836
+          ],
+          "goods": {
+            "smartphone": 2,
+            "tv": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "10:30",
+            "11:30"
+          ]
+        },
+        "time": [
+          "10:30",
+          "11:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 49",
+          "location": [
+            52.745432,
+            41.435781
+          ],
+          "goods": {
+            "smartphone": 2,
+            "washing machine": 1,
+            "tv": 3
+          },
+          "time_windows": [
+            "11:30",
+            "12:30"
+          ]
+        },
+        "time": [
+          "11:30",
+          "12:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 68",
+          "location": [
+            52.745621,
+            41.424896
+          ],
+          "goods": {
+            "bicycle": 3,
+            "smartphone": 1,
+            "laptop": 1
+          },
+          "time_windows": [
+            "13:00",
+            "14:00"
+          ]
+        },
+        "time": [
+          "13:00",
+          "14:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 100",
+          "location": [
+            52.746534,
+            41.416968
+          ],
+          "goods": {
+            "tv": 3,
+            "laptop": 2
+          },
+          "time_windows": [
+            "14:00",
+            "15:00"
+          ]
+        },
+        "time": [
+          "14:00",
+          "15:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 96",
+          "location": [
+            52.755906,
+            41.407167
+          ],
+          "goods": {
+            "smartphone": 2,
+            "tv": 2
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:00",
+          "15:53"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 57",
+          "location": [
+            52.755659,
+            41.405111
+          ],
+          "goods": {
+            "washing machine": 1,
+            "laptop": 3,
+            "smartphone": 1,
+            "tv": 3
+          },
+          "time_windows": [
+            "15:30",
+            "16:30"
+          ]
+        },
+        "time": [
+          "15:30",
+          "15:54"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 22",
+          "location": [
+            52.766041,
+            41.426579
+          ],
+          "goods": {
+            "bicycle": 1,
+            "smartphone": 2,
+            "tv": 1
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:36",
+          "16:00"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "15:42",
+          "18:06"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "05:38",
+          "08:38"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 24",
+          "location": [
+            52.696526,
+            41.486238
+          ],
+          "goods": {
+            "bicycle": 3,
+            "washing machine": 1,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "08:00",
+            "09:00"
+          ]
+        },
+        "time": [
+          "08:00",
+          "09:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 38",
+          "location": [
+            52.767049,
+            41.475705
+          ],
+          "goods": {
+            "bicycle": 2,
+            "tv": 3,
+            "washing machine": 1,
+            "laptop": 1
+          },
+          "time_windows": [
+            "09:00",
+            "10:00"
+          ]
+        },
+        "time": [
+          "09:00",
+          "10:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 27",
+          "location": [
+            52.695859,
+            41.404147
+          ],
+          "goods": {
+            "laptop": 2,
+            "tv": 1,
+            "washing machine": 3,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "10:30",
+            "11:30"
+          ]
+        },
+        "time": [
+          "10:30",
+          "11:30"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "10:41",
+          "13:41"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "05:22",
+          "07:45"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 99",
+          "location": [
+            52.705389,
+            41.457728
+          ],
+          "goods": {
+            "laptop": 3,
+            "bicycle": 3,
+            "washing machine": 3,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "07:30",
+            "08:30"
+          ]
+        },
+        "time": [
+          "07:30",
+          "07:53"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 36",
+          "location": [
+            52.706553,
+            41.405693
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 2,
+            "washing machine": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "07:00",
+            "08:00"
+          ]
+        },
+        "time": [
+          "07:37",
+          "08:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 41",
+          "location": [
+            52.705698,
+            41.418535
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 2,
+            "smartphone": 1,
+            "washing machine": 2
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:30",
+          "09:25"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 1",
+          "location": [
+            52.705371,
+            41.44582
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 1
+          },
+          "time_windows": [
+            "08:30",
+            "09:30"
+          ]
+        },
+        "time": [
+          "08:35",
+          "09:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 17",
+          "location": [
+            52.726408,
+            41.397991
+          ],
+          "goods": {
+            "washing machine": 2,
+            "laptop": 2,
+            "bicycle": 2,
+            "smartphone": 1
+          },
+          "time_windows": [
+            "09:30",
+            "10:30"
+          ]
+        },
+        "time": [
+          "09:56",
+          "10:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 74",
+          "location": [
+            52.716035,
+            41.404672
+          ],
+          "goods": {
+            "laptop": 1,
+            "smartphone": 3,
+            "bicycle": 1,
+            "washing machine": 1
+          },
+          "time_windows": [
+            "12:00",
+            "13:00"
+          ]
+        },
+        "time": [
+          "12:00",
+          "12:23"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 61",
+          "location": [
+            52.715448,
+            41.404402
+          ],
+          "goods": {
+            "laptop": 1,
+            "washing machine": 3,
+            "tv": 2
+          },
+          "time_windows": [
+            "11:30",
+            "12:30"
+          ]
+        },
+        "time": [
+          "12:01",
+          "12:24"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 23",
+          "location": [
+            52.696805,
+            41.438834
+          ],
+          "goods": {
+            "washing machine": 3,
+            "smartphone": 3,
+            "tv": 3
+          },
+          "time_windows": [
+            "11:30",
+            "12:30"
+          ]
+        },
+        "time": [
+          "12:07",
+          "12:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 88",
+          "location": [
+            52.716309,
+            41.45431
+          ],
+          "goods": {
+            "laptop": 2,
+            "washing machine": 2,
+            "tv": 3
+          },
+          "time_windows": [
+            "13:00",
+            "14:00"
+          ]
+        },
+        "time": [
+          "13:00",
+          "13:23"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 5",
+          "location": [
+            52.696158,
+            41.395516
+          ],
+          "goods": {
+            "laptop": 1,
+            "tv": 2,
+            "washing machine": 3,
+            "smartphone": 2
+          },
+          "time_windows": [
+            "12:30",
+            "13:30"
+          ]
+        },
+        "time": [
+          "13:07",
+          "13:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 97",
+          "location": [
+            52.725764,
+            41.395508
+          ],
+          "goods": {
+            "smartphone": 3,
+            "bicycle": 2,
+            "laptop": 3,
+            "tv": 3
+          },
+          "time_windows": [
+            "13:30",
+            "14:30"
+          ]
+        },
+        "time": [
+          "13:30",
+          "14:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 42",
+          "location": [
+            52.705782,
+            41.414941
+          ],
+          "goods": {
+            "smartphone": 1,
+            "tv": 1,
+            "laptop": 2
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:00",
+          "16:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 92",
+          "location": [
+            52.705869,
+            41.395828
+          ],
+          "goods": {
+            "laptop": 2,
+            "washing machine": 1,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "16:00",
+            "17:00"
+          ]
+        },
+        "time": [
+          "16:00",
+          "16:24"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 47",
+          "location": [
+            52.72575,
+            41.405113
+          ],
+          "goods": {
+            "smartphone": 2,
+            "tv": 3,
+            "bicycle": 2
+          },
+          "time_windows": [
+            "15:30",
+            "16:30"
+          ]
+        },
+        "time": [
+          "16:06",
+          "16:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 58",
+          "location": [
+            52.715956,
+            41.45633
+          ],
+          "goods": {
+            "smartphone": 1,
+            "tv": 1,
+            "washing machine": 2,
+            "laptop": 3
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:00",
+          "18:00"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "17:07",
+          "20:07"
+        ]
+      }
+    ],
+    [
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "12:50",
+          "15:50"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 52",
+          "location": [
+            52.715671,
+            41.485794
+          ],
+          "goods": {
+            "smartphone": 1,
+            "laptop": 2,
+            "bicycle": 3
+          },
+          "time_windows": [
+            "15:00",
+            "16:00"
+          ]
+        },
+        "time": [
+          "15:00",
+          "16:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 19",
+          "location": [
+            52.706534,
+            41.464689
+          ],
+          "goods": {
+            "laptop": 1,
+            "bicycle": 2
+          },
+          "time_windows": [
+            "15:30",
+            "16:30"
+          ]
+        },
+        "time": [
+          "15:30",
+          "16:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 48",
+          "location": [
+            52.695464,
+            41.484117
+          ],
+          "goods": {
+            "tv": 1,
+            "washing machine": 1,
+            "bicycle": 2
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:00",
+          "17:18"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 21",
+          "location": [
+            52.696459,
+            41.435317
+          ],
+          "goods": {
+            "tv": 3,
+            "washing machine": 1,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "16:30",
+            "17:30"
+          ]
+        },
+        "time": [
+          "17:12",
+          "17:30"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 70",
+          "location": [
+            52.70708,
+            41.428317
+          ],
+          "goods": {
+            "bicycle": 1,
+            "washing machine": 3,
+            "laptop": 1
+          },
+          "time_windows": [
+            "17:00",
+            "18:00"
+          ]
+        },
+        "time": [
+          "17:16",
+          "18:00"
+        ]
+      },
+      {
+        "type": "client",
+        "entry": {
+          "id": "Client 37",
+          "location": [
+            52.70571,
+            41.415127
+          ],
+          "goods": {
+            "washing machine": 2,
+            "bicycle": 3,
+            "laptop": 1,
+            "smartphone": 3
+          },
+          "time_windows": [
+            "17:30",
+            "18:30"
+          ]
+        },
+        "time": [
+          "17:30",
+          "18:30"
+        ]
+      },
+      {
+        "type": "warehouse",
+        "entry": {
+          "id": "Warehouse 1",
+          "location": [
+            52.743628,
+            41.424363
+          ],
+          "time": null
+        },
+        "time": [
+          "17:38",
+          "20:38"
+        ]
+      }
+    ]
+  ],
+  "depot": [
+    52.743628,
+    41.424363
+  ],
+  "distance_per_vehicle": [
+    16595,
+    16714,
+    18352,
+    21447,
+    42710,
+    97049,
+    27069,
+    39207,
+    62672,
+    31099
+  ],
+  "time_per_vehicle": [
+    "7h 43m",
+    "3h 24m",
+    "4h 40m",
+    "2h 39m",
+    "13h 45m",
+    "14h 7m",
+    "11h 46m",
+    "5h 3m",
+    "11h 45m",
+    "4h 48m"
+  ],
+  "delivered_goods": [
+    {
+      "washing machine": 17,
+      "bicycle": 13,
+      "laptop": 14,
+      "smartphone": 11,
+      "tv": 9
+    },
+    {
+      "bicycle": 8,
+      "laptop": 6,
+      "smartphone": 9,
+      "tv": 13,
+      "washing machine": 8
+    },
+    {
+      "tv": 6,
+      "smartphone": 13,
+      "bicycle": 9,
+      "laptop": 4,
+      "washing machine": 5
+    },
+    {
+      "washing machine": 12,
+      "smartphone": 8,
+      "tv": 8,
+      "laptop": 14,
+      "bicycle": 13
+    },
+    {
+      "laptop": 18,
+      "washing machine": 25,
+      "bicycle": 22,
+      "smartphone": 18,
+      "tv": 16
+    },
+    {
+      "smartphone": 32,
+      "tv": 26,
+      "laptop": 26,
+      "bicycle": 21,
+      "washing machine": 26
+    },
+    {
+      "washing machine": 10,
+      "bicycle": 13,
+      "smartphone": 16,
+      "tv": 22,
+      "laptop": 9
+    },
+    {
+      "bicycle": 8,
+      "washing machine": 5,
+      "smartphone": 1,
+      "tv": 4,
+      "laptop": 3
+    },
+    {
+      "laptop": 23,
+      "bicycle": 16,
+      "washing machine": 24,
+      "smartphone": 18,
+      "tv": 23
+    },
+    {
+      "smartphone": 7,
+      "laptop": 5,
+      "bicycle": 11,
+      "tv": 4,
+      "washing machine": 7
+    }
+  ],
+  "capacities": [
+    189,
+    126,
+    96,
+    158,
+    297,
+    350,
+    193,
+    73,
+    294,
+    103
+  ],
+  "used_vehicles": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "times_per_route": [
+    [
+      0,
+      1,
+      0,
+      0,
+      4,
+      3,
+      4,
+      4,
+      3,
+      2,
+      4,
+      6
+    ],
+    [
+      0,
+      6,
+      5,
+      5,
+      3,
+      5,
+      5
+    ],
+    [
+      0,
+      1,
+      6,
+      7,
+      3,
+      4,
+      6,
+      3
+    ],
+    [
+      0,
+      5,
+      3,
+      6,
+      2,
+      7,
+      7,
+      4,
+      5
+    ],
+    [
+      0,
+      7,
+      3,
+      6,
+      5,
+      3,
+      2,
+      4,
+      9,
+      7,
+      4,
+      6,
+      6,
+      6,
+      4,
+      4,
+      8
+    ],
+    [
+      0,
+      8,
+      4,
+      2,
+      12,
+      6,
+      7,
+      3,
+      13,
+      8,
+      13,
+      11,
+      6,
+      7,
+      4,
+      13,
+      3,
+      6,
+      14,
+      2,
+      6,
+      7
+    ],
+    [
+      0,
+      4,
+      3,
+      2,
+      6,
+      10,
+      6,
+      3,
+      1,
+      3,
+      3,
+      3,
+      1,
+      6,
+      6
+    ],
+    [
+      0,
+      22,
+      25,
+      14,
+      11
+    ],
+    [
+      0,
+      8,
+      7,
+      3,
+      5,
+      8,
+      4,
+      1,
+      6,
+      4,
+      7,
+      7,
+      5,
+      4,
+      6,
+      7,
+      7
+    ],
+    [
+      0,
+      10,
+      10,
+      9,
+      12,
+      4,
+      3,
+      8
+    ]
+  ]
+}

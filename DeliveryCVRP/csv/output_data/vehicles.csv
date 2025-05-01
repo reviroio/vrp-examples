@@ -1,0 +1,11 @@
+vehicle id,distance,time,depot,capacity,clients,delivered goods
+vehicle 1,16595,7h 43m,"52.743628,41.424363",189/200,"Client 18,Client 46,Client 81,Client 77,Client 59,Client 9,Client 86,Client 75,Client 15,Client 67","washing machine:17,bicycle:13,laptop:14,smartphone:11,tv:9"
+vehicle 2,16714,3h 24m,"52.743628,41.424363",126/150,"Client 25,Client 69,Client 55,Client 8,Client 51","bicycle:8,laptop:6,smartphone:9,tv:13,washing machine:8"
+vehicle 3,18352,4h 40m,"52.743628,41.424363",96/100,"Client 54,Client 34,Client 87,Client 90,Client 31,Client 6","tv:6,smartphone:13,bicycle:9,laptop:4,washing machine:5"
+vehicle 4,21447,2h 39m,"52.743628,41.424363",158/200,"Client 89,Client 72,Client 35,Client 13,Client 66,Client 28,Client 4","washing machine:12,smartphone:8,tv:8,laptop:14,bicycle:13"
+vehicle 5,42710,13h 45m,"52.743628,41.424363",297/350,"Client 53,Client 83,Client 80,Client 32,Client 44,Client 94,Client 82,Client 40,Client 65,Client 63,Client 91,Client 76,Client 60,Client 73,Client 78","laptop:18,washing machine:25,bicycle:22,smartphone:18,tv:16"
+vehicle 6,97049,14h 7m,"52.743628,41.424363",350/350,"Client 39,Client 45,Client 3,Client 93,Client 56,Client 14,Client 64,Client 43,Client 50,Client 62,Client 71,Client 79,Client 11,Client 29,Client 85,Client 26,Client 16,Client 10,Client 2,Client 7","smartphone:32,tv:26,laptop:26,bicycle:21,washing machine:26"
+vehicle 7,27069,11h 46m,"52.743628,41.424363",193/200,"Client 98,Client 30,Client 12,Client 20,Client 33,Client 84,Client 95,Client 49,Client 68,Client 100,Client 96,Client 57,Client 22","washing machine:10,bicycle:13,smartphone:16,tv:22,laptop:9"
+vehicle 8,39207,5h 3m,"52.743628,41.424363",73/150,"Client 24,Client 38,Client 27","bicycle:8,washing machine:5,smartphone:1,tv:4,laptop:3"
+vehicle 9,62672,11h 45m,"52.743628,41.424363",294/300,"Client 99,Client 36,Client 41,Client 1,Client 17,Client 74,Client 61,Client 23,Client 88,Client 5,Client 97,Client 42,Client 92,Client 47,Client 58","laptop:23,bicycle:16,washing machine:24,smartphone:18,tv:23"
+vehicle 10,31099,4h 48m,"52.743628,41.424363",103/150,"Client 52,Client 19,Client 48,Client 21,Client 70,Client 37","smartphone:7,laptop:5,bicycle:11,tv:4,washing machine:7"

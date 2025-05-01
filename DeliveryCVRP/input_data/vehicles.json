@@ -1,42 +1,42 @@
 [
   {
     "id": "Vehicle 1",
-    "capacity": 47
+    "capacity": 200
   },
   {
     "id": "Vehicle 2",
-    "capacity": 35
+    "capacity": 150
   },
   {
     "id": "Vehicle 3",
-    "capacity": 16
+    "capacity": 100
   },
   {
     "id": "Vehicle 4",
-    "capacity": 16
+    "capacity": 200
   },
   {
     "id": "Vehicle 5",
-    "capacity": 40
+    "capacity": 350
   },
   {
     "id": "Vehicle 6",
-    "capacity": 42
+    "capacity": 350
   },
   {
     "id": "Vehicle 7",
-    "capacity": 11
+    "capacity": 200
   },
   {
     "id": "Vehicle 8",
-    "capacity": 45
+    "capacity": 150
   },
   {
     "id": "Vehicle 9",
-    "capacity": 11
+    "capacity": 300
   },
   {
     "id": "Vehicle 10",
-    "capacity": 35
+    "capacity": 150
   }
 ]
