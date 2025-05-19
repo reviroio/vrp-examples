@@ -48,7 +48,7 @@ html, body {
     overflow-y: auto;
     background: #f9f9f9;
     padding: 10px;
-    height: calc(100% - var(--map-height, 60%));
+    height: calc(100% - var(--map-height, 60%)) - 754;
 }
 
 
