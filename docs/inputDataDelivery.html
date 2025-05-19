@@ -29,6 +29,10 @@
         overflow: auto;
     }
 
+    .container {
+        margin: 0 30px;
+    }
+
     h1, h2 {
         color: #333;
     }
@@ -54,704 +58,706 @@
         font-size: 1.1em;
     }
 </style>
-<h1>Информация по логистике</h1>
 
-<div class="description">
-    Входные данные для рассчета маршрутов по развозке товаров до клиентов.
+<div class="container">
+    <h1>Информация по логистике</h1>
+
+    <div class="description">
+        Входные данные для рассчета маршрутов по развозке товаров до клиентов.
+    </div>
+
+    <h2>Склад</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Координаты</th>
+            <th>Товары и наличие</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Склад 1</td>
+            <td>[52.743628, 41.424363]</td>
+            <td>
+                <ul>
+                    <li>smartphone — 1000 шт (вес 1)</li>
+                    <li>laptop — 1000 шт (вес 1)</li>
+                    <li>washing machine — 50 шт (вес 5)</li>
+                    <li>tv — 50 шт (вес 3)</li>
+                    <li>bicycle — 100 шт (вес 4)</li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Транспорт</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Грузоподъёмность</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Машина 1</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Машина 2</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Машина 3</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>Машина 4</td>
+            <td>250</td>
+        </tr>
+        <tr>
+            <td>Машина 5</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Машина 6</td>
+            <td>350</td>
+        </tr>
+        <tr>
+            <td>Машина 7</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>Машина 8</td>
+            <td>400</td>
+        </tr>
+        <tr>
+            <td>Машина 9</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Машина 10</td>
+            <td>350</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>Клиенты</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Координаты</th>
+            <th>Заказ</th>
+            <th>Временное окно</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Клиент 1</td>
+            <td>[52.705371, 41.44582]</td>
+            <td>laptop: 1, tv: 1</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Клиент 2</td>
+            <td>[52.69611, 41.416908]</td>
+            <td>smartphone: 2, washing machine: 1, tv: 1</td>
+            <td>20:00 – 21:00</td>
+        </tr>
+        <tr>
+            <td>Клиент 3</td>
+            <td>[52.766732, 41.457028]</td>
+            <td>bicycle: 2, smartphone: 3, laptop: 2</td>
+            <td>10:30 – 11:30</td>
+        </tr>
+        <tr>
+            <td>Клиент 4</td>
+            <td>[52.736892, 41.405755]</td>
+            <td>washing machine: 3, laptop: 2, bicycle: 2, tv: 1</td>
+            <td>6:00 – 7:00</td>
+        </tr>
+        <tr>
+            <td>Клиент 5</td>
+            <td>[52.696158, 41.395516]</td>
+            <td>laptop: 1, tv: 2, washing machine: 3, smartphone: 2</td>
+            <td>12:30 – 13:30</td>
+        </tr>
+        <tr>
+            <td>Client 6</td>
+            <td>[52.736649, 41.423851]</td>
+            <td>smartphone: 3, bicycle: 3, laptop: 1</td>
+            <td>19:00 – 20:0</td>
+        </tr>
+        <tr>
+            <td>Client 7</td>
+            <td>[52.716464, 41.417606]</td>
+            <td>tv: 3, smartphone: 2, bicycle: 2, washing machine: 1, laptop: 3</td>
+            <td>19:30 – 20:30</td>
+        </tr>
+        <tr>
+            <td>Client 8</td>
+            <td>[52.746124, 41.447874]</td>
+            <td>tv: 1, bicycle: 2, laptop: 1, washing machine: 2</td>
+            <td>20:00 – 21:0</td>
+        </tr>
+        <tr>
+            <td>Client 9</td>
+            <td>[52.716227, 41.418524]</td>
+            <td>laptop: 2, bicycle: 3, washing machine: 2</td>
+            <td>11:30 – 12:30</td>
+        </tr>
+        <tr>
+            <td>Client 10</td>
+            <td>[52.697154, 41.418885]</td>
+            <td>washing machine: 2, smartphone: 3, laptop: 1</td>
+            <td>20:00 – 21:0</td>
+        </tr>
+        <tr>
+            <td>Client 11</td>
+            <td>[52.756717, 41.475609]</td>
+            <td>smartphone: 2, washing machine: 2, tv: 2</td>
+            <td>17:30 – 18:30</td>
+        </tr>
+        <tr>
+            <td>Client 12</td>
+            <td>[52.746692, 41.474143]</td>
+            <td>washing machine: 2, laptop: 1, tv: 2, smartphone: 3</td>
+            <td>7:00 – 8:0</td>
+        </tr>
+        <tr>
+            <td>Client 13</td>
+            <td>[52.706711, 41.407492]</td>
+            <td>tv: 1, bicycle: 2, laptop: 3, washing machine: 3</td>
+            <td>6:30 – 7:30</td>
+        </tr>
+        <tr>
+            <td>Client 14</td>
+            <td>[52.766042, 41.458254]</td>
+            <td>laptop: 1, tv: 1, bicycle: 3, washing machine: 1</td>
+            <td>12:00 – 13:0</td>
+        </tr>
+        <tr>
+            <td>Client 15</td>
+            <td>[52.716201, 41.415721]</td>
+            <td>tv: 1, washing machine: 3</td>
+            <td>12:30 – 13:30</td>
+        </tr>
+        <tr>
+            <td>Client 16</td>
+            <td>[52.695412, 41.487618]</td>
+            <td>bicycle: 1, smartphone: 3</td>
+            <td>20:00 – 21:0</td>
+        </tr>
+        <tr>
+            <td>Client 17</td>
+            <td>[52.726408, 41.397991]</td>
+            <td>washing machine: 2, laptop: 2, bicycle: 2, smartphone: 1</td>
+            <td>9:30 – 10:30</td>
+        </tr>
+        <tr>
+            <td>Client 18</td>
+            <td>[52.746782, 41.426947]</td>
+            <td>washing machine: 3, bicycle: 3, laptop: 1</td>
+            <td>7:00 – 8:0</td>
+        </tr>
+        <tr>
+            <td>Client 19</td>
+            <td>[52.706534, 41.464689]</td>
+            <td>laptop: 1, bicycle: 2</td>
+            <td>15:30 – 16:30</td>
+        </tr>
+        <tr>
+            <td>Client 20</td>
+            <td>[52.746694, 41.44517]</td>
+            <td>laptop: 1, smartphone: 1</td>
+            <td>7:00 – 8:0</td>
+        </tr>
+        <tr>
+            <td>Client 21</td>
+            <td>[52.696459, 41.435317]</td>
+            <td>tv: 3, washing machine: 1, smartphone: 3</td>
+            <td>16:30 – 17:30</td>
+        </tr>
+        <tr>
+            <td>Client 22</td>
+            <td>[52.766041, 41.426579]</td>
+            <td>bicycle: 1, smartphone: 2, tv: 1</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 23</td>
+            <td>[52.696805, 41.438834]</td>
+            <td>washing machine: 3, smartphone: 3, tv: 3</td>
+            <td>11:30 – 12:30</td>
+        </tr>
+        <tr>
+            <td>Client 24</td>
+            <td>[52.696526, 41.486238]</td>
+            <td>bicycle: 3, washing machine: 1, smartphone: 1</td>
+            <td>8:00 – 9:0</td>
+        </tr>
+        <tr>
+            <td>Client 25</td>
+            <td>[52.76575, 41.394116]</td>
+            <td>bicycle: 1, laptop: 3, smartphone: 1, tv: 3</td>
+            <td>19:30 – 20:30</td>
+        </tr>
+        <tr>
+            <td>Client 26</td>
+            <td>[52.695526, 41.477396]</td>
+            <td>laptop: 1, bicycle: 2, washing machine: 1, smartphone: 1</td>
+            <td>19:00 – 20:0</td>
+        </tr>
+        <tr>
+            <td>Client 27</td>
+            <td>[52.695859, 41.404147]</td>
+            <td>laptop: 2, tv: 1, washing machine: 3, bicycle: 3</td>
+            <td>10:30 – 11:30</td>
+        </tr>
+        <tr>
+            <td>Client 28</td>
+            <td>[52.736616, 41.415301]</td>
+            <td>smartphone: 2, tv: 2, laptop: 3</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 29</td>
+            <td>[52.76668, 41.474193]</td>
+            <td>tv: 1, smartphone: 2, laptop: 2</td>
+            <td>18:30 – 19:30</td>
+        </tr>
+        <tr>
+            <td>Client 30</td>
+            <td>[52.746833, 41.468776]</td>
+            <td>tv: 3, laptop: 1, bicycle: 1, smartphone: 1</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 31</td>
+            <td>[52.74669, 41.458204]</td>
+            <td>tv: 1, washing machine: 3, bicycle: 1, smartphone: 1</td>
+            <td>19:30 – 20:30</td>
+        </tr>
+        <tr>
+            <td>Client 32</td>
+            <td>[52.746384, 41.45558]</td>
+            <td>laptop: 1, tv: 3, washing machine: 3</td>
+            <td>10:00 – 11:0</td>
+        </tr>
+        <tr>
+            <td>Client 33</td>
+            <td>[52.766991, 41.424162]</td>
+            <td>bicycle: 2, washing machine: 2, tv: 1</td>
+            <td>9:30 – 10:30</td>
+        </tr>
+        <tr>
+            <td>Client 34</td>
+            <td>[52.726641, 41.465113]</td>
+            <td>smartphone: 1, laptop: 2, bicycle: 1</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 35</td>
+            <td>[52.70578, 41.40692]</td>
+            <td>smartphone: 1, washing machine: 3, bicycle: 3, tv: 2</td>
+            <td>6:30 – 7:30</td>
+        </tr>
+        <tr>
+            <td>Client 36</td>
+            <td>[52.706553, 41.405693]</td>
+            <td>laptop: 1, tv: 2, washing machine: 2, bicycle: 3</td>
+            <td>7:00 – 8:0</td>
+        </tr>
+        <tr>
+            <td>Client 37</td>
+            <td>[52.70571, 41.415127]</td>
+            <td>washing machine: 2, bicycle: 3, laptop: 1, smartphone: 3</td>
+            <td>17:30 – 18:30</td>
+        </tr>
+        <tr>
+            <td>Client 38</td>
+            <td>[52.767049, 41.475705]</td>
+            <td>bicycle: 2, tv: 3, washing machine: 1, laptop: 1</td>
+            <td>9:00 – 10:0</td>
+        </tr>
+        <tr>
+            <td>Client 39</td>
+            <td>[52.766898, 41.484435]</td>
+            <td>smartphone: 3, tv: 3, laptop: 1</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Client 40</td>
+            <td>[52.745793, 41.465]</td>
+            <td>tv: 3, bicycle: 2, laptop: 2</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 41</td>
+            <td>[52.705698, 41.418535]</td>
+            <td>laptop: 1, tv: 2, smartphone: 1, washing machine: 2</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Client 42</td>
+            <td>[52.705782, 41.414941]</td>
+            <td>smartphone: 1, tv: 1, laptop: 2</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 43</td>
+            <td>[52.695381, 41.477734]</td>
+            <td>bicycle: 1, tv: 3, laptop: 2</td>
+            <td>14:30 – 15:30</td>
+        </tr>
+        <tr>
+            <td>Client 44</td>
+            <td>[52.756012, 41.44889]</td>
+            <td>smartphone: 3, tv: 1</td>
+            <td>13:00 – 14:0</td>
+        </tr>
+        <tr>
+            <td>Client 45</td>
+            <td>[52.766898, 41.46397]</td>
+            <td>bicycle: 1, washing machine: 1, laptop: 1, tv: 1</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Client 46</td>
+            <td>[52.747116, 41.487198]</td>
+            <td>laptop: 1, smartphone: 1, tv: 3</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 47</td>
+            <td>[52.72575, 41.405113]</td>
+            <td>smartphone: 2, tv: 3, bicycle: 2</td>
+            <td>15:30 – 16:30</td>
+        </tr>
+        <tr>
+            <td>Client 48</td>
+            <td>[52.695464, 41.484117]</td>
+            <td>tv: 1, washing machine: 1, bicycle: 2</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 49</td>
+            <td>[52.745432, 41.435781]</td>
+            <td>smartphone: 2, washing machine: 1, tv: 3</td>
+            <td>11:30 – 12:30</td>
+        </tr>
+        <tr>
+            <td>Client 50</td>
+            <td>[52.725722, 41.475147]</td>
+            <td>smartphone: 3, tv: 2, washing machine: 1, laptop: 1</td>
+            <td>14:00 – 15:0</td>
+        </tr>
+        <tr>
+            <td>Client 51</td>
+            <td>[52.755893, 41.434971]</td>
+            <td>washing machine: 3, bicycle: 1, smartphone: 2, tv: 3</td>
+            <td>20:30 – 21:30</td>
+        </tr>
+        <tr>
+            <td>Client 52</td>
+            <td>[52.715671, 41.485794]</td>
+            <td>smartphone: 1, laptop: 2, bicycle: 3</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 53</td>
+            <td>[52.736188, 41.477807]</td>
+            <td>laptop: 1, washing machine: 2, bicycle: 2</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Client 54</td>
+            <td>[52.74544, 41.42491]</td>
+            <td>tv: 1, smartphone: 2, bicycle: 1</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 55</td>
+            <td>[52.735755, 41.45489]</td>
+            <td>washing machine: 1, bicycle: 2, smartphone: 3, laptop: 2, tv: 3</td>
+            <td>20:30 – 21:30</td>
+        </tr>
+        <tr>
+            <td>Client 56</td>
+            <td>[52.766276, 41.416602]</td>
+            <td>smartphone: 1, washing machine: 2, tv: 1, laptop: 2, bicycle: 1</td>
+            <td>12:00 – 13:0</td>
+        </tr>
+        <tr>
+            <td>Client 57</td>
+            <td>[52.755659, 41.405111]</td>
+            <td>washing machine: 1, laptop: 3, smartphone: 1, tv: 3</td>
+            <td>15:30 – 16:30</td>
+        </tr>
+        <tr>
+            <td>Client 58</td>
+            <td>[52.715956, 41.45633]</td>
+            <td>smartphone: 1, tv: 1, washing machine: 2, laptop: 3</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 59</td>
+            <td>[52.72691, 41.437281]</td>
+            <td>smartphone: 1, laptop: 3</td>
+            <td>9:30 – 10:30</td>
+        </tr>
+        <tr>
+            <td>Client 60</td>
+            <td>[52.715834, 41.457519]</td>
+            <td>bicycle: 2, tv: 1, smartphone: 1, washing machine: 2</td>
+            <td>18:00 – 19:0</td>
+        </tr>
+        <tr>
+            <td>Client 61</td>
+            <td>[52.715448, 41.404402]</td>
+            <td>laptop: 1, washing machine: 3, tv: 2</td>
+            <td>11:30 – 12:30</td>
+        </tr>
+        <tr>
+            <td>Client 62</td>
+            <td>[52.76643, 41.425889]</td>
+            <td>bicycle: 3, washing machine: 3, tv: 3, laptop: 2</td>
+            <td>14:00 – 15:0</td>
+        </tr>
+        <tr>
+            <td>Client 63</td>
+            <td>[52.736293, 41.48882]</td>
+            <td>laptop: 2, washing machine: 2, bicycle: 1</td>
+            <td>17:30 – 18:30</td>
+        </tr>
+        <tr>
+            <td>Client 64</td>
+            <td>[52.765848, 41.474269]</td>
+            <td>laptop: 1, washing machine: 3, smartphone: 3</td>
+            <td>12:00 – 13:0</td>
+        </tr>
+        <tr>
+            <td>Client 65</td>
+            <td>[52.737083, 41.475853]</td>
+            <td>laptop: 2, bicycle: 2, smartphone: 3, washing machine: 3</td>
+            <td>14:30 – 15:30</td>
+        </tr>
+        <tr>
+            <td>Client 66</td>
+            <td>[52.726749, 41.414328]</td>
+            <td>washing machine: 1, bicycle: 3, laptop: 3</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 67</td>
+            <td>[52.716068, 41.435824]</td>
+            <td>laptop: 1, tv: 1, washing machine: 2, bicycle: 3</td>
+            <td>12:30 – 13:30</td>
+        </tr>
+        <tr>
+            <td>Client 68</td>
+            <td>[52.745621, 41.424896]</td>
+            <td>bicycle: 3, smartphone: 1, laptop: 1</td>
+            <td>13:00 – 14:0</td>
+        </tr>
+        <tr>
+            <td>Client 69</td>
+            <td>[52.746067, 41.42651]</td>
+            <td>smartphone: 3, tv: 3, bicycle: 2, washing machine: 2</td>
+            <td>20:30 – 21:30</td>
+        </tr>
+        <tr>
+            <td>Client 70</td>
+            <td>[52.70708, 41.428317]</td>
+            <td>bicycle: 1, washing machine: 3, laptop: 1</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 71</td>
+            <td>[52.766742, 41.467469]</td>
+            <td>tv: 1, smartphone: 1, washing machine: 3, laptop: 1</td>
+            <td>14:30 – 15:30</td>
+        </tr>
+        <tr>
+            <td>Client 72</td>
+            <td>[52.725924, 41.445375]</td>
+            <td>laptop: 3, smartphone: 2, bicycle: 3</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 73</td>
+            <td>[52.725511, 41.454404]</td>
+            <td>laptop: 1, bicycle: 2, smartphone: 3, tv: 2</td>
+            <td>19:30 – 20:30</td>
+        </tr>
+        <tr>
+            <td>Client 74</td>
+            <td>[52.716035, 41.404672]</td>
+            <td>laptop: 1, smartphone: 3, bicycle: 1, washing machine: 1</td>
+            <td>12:00 – 13:0</td>
+        </tr>
+        <tr>
+            <td>Client 75</td>
+            <td>[52.716153, 41.406683]</td>
+            <td>tv: 3, smartphone: 3, laptop: 2</td>
+            <td>12:30 – 13:30</td>
+        </tr>
+        <tr>
+            <td>Client 76</td>
+            <td>[52.736666, 41.467452]</td>
+            <td>bicycle: 3, laptop: 1, tv: 3, washing machine: 2</td>
+            <td>18:00 – 19:0</td>
+        </tr>
+        <tr>
+            <td>Client 77</td>
+            <td>[52.726814, 41.448403]</td>
+            <td>washing machine: 3, smartphone: 2, laptop: 1, bicycle: 1</td>
+            <td>9:30 – 10:30</td>
+        </tr>
+        <tr>
+            <td>Client 78</td>
+            <td>[52.715839, 41.466543]</td>
+            <td>bicycle: 1, washing machine: 2, tv: 1, smartphone: 2</td>
+            <td>20:00 – 21:0</td>
+        </tr>
+        <tr>
+            <td>Client 79</td>
+            <td>[52.766307, 41.434935]</td>
+            <td>smartphone: 1, laptop: 1, tv: 3, bicycle: 3</td>
+            <td>16:30 – 17:30</td>
+        </tr>
+        <tr>
+            <td>Client 80</td>
+            <td>[52.74656, 41.464591]</td>
+            <td>smartphone: 1, washing machine: 3, bicycle: 1, tv: 2</td>
+            <td>10:00 – 11:0</td>
+        </tr>
+        <tr>
+            <td>Client 81</td>
+            <td>[52.72584, 41.42507]</td>
+            <td>laptop: 1, bicycle: 3, washing machine: 3, smartphone: 1, tv: 1</td>
+            <td>8:30 – 9:30</td>
+        </tr>
+        <tr>
+            <td>Client 82</td>
+            <td>[52.76696, 41.437057]</td>
+            <td>laptop: 1, smartphone: 2, washing machine: 1</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 83</td>
+            <td>[52.736591, 41.487089]</td>
+            <td>washing machine: 1, bicycle: 1, laptop: 2</td>
+            <td>9:30 – 10:30</td>
+        </tr>
+        <tr>
+            <td>Client 84</td>
+            <td>[52.756931, 41.425184]</td>
+            <td>tv: 2, washing machine: 3</td>
+            <td>9:00 – 10:0</td>
+        </tr>
+        <tr>
+            <td>Client 85</td>
+            <td>[52.706727, 41.486486]</td>
+            <td>bicycle: 2, washing machine: 3, laptop: 3</td>
+            <td>18:30 – 19:30</td>
+        </tr>
+        <tr>
+            <td>Client 86</td>
+            <td>[52.706097, 41.42591]</td>
+            <td>washing machine: 1, laptop: 2, smartphone: 3</td>
+            <td>11:00 – 12:0</td>
+        </tr>
+        <tr>
+            <td>Client 87</td>
+            <td>[52.766428, 41.43737]</td>
+            <td>laptop: 1, tv: 3, bicycle: 1, smartphone: 3</td>
+            <td>17:30 – 18:30</td>
+        </tr>
+        <tr>
+            <td>Client 88</td>
+            <td>[52.716309, 41.45431]</td>
+            <td>laptop: 2, washing machine: 2, tv: 3</td>
+            <td>13:00 – 14:0</td>
+        </tr>
+        <tr>
+            <td>Client 89</td>
+            <td>[52.726531, 41.465337]</td>
+            <td>washing machine: 2, smartphone: 3, tv: 2</td>
+            <td>6:30 – 7:30</td>
+        </tr>
+        <tr>
+            <td>Client 90</td>
+            <td>[52.755556, 41.446419]</td>
+            <td>washing machine: 2, bicycle: 2, smartphone: 3, tv: 1</td>
+            <td>17:00 – 18:0</td>
+        </tr>
+        <tr>
+            <td>Client 91</td>
+            <td>[52.72551, 41.485943]</td>
+            <td>washing machine: 2, laptop: 2, bicycle: 3</td>
+            <td>17:30 – 18:30</td>
+        </tr>
+        <tr>
+            <td>Client 92</td>
+            <td>[52.705869, 41.395828]</td>
+            <td>laptop: 2, washing machine: 1, bicycle: 3</td>
+            <td>16:00 – 17:0</td>
+        </tr>
+        <tr>
+            <td>Client 93</td>
+            <td>[52.746178, 41.398941]</td>
+            <td>smartphone: 2, washing machine: 2, laptop: 1, tv: 1</td>
+            <td>12:30 – 13:30</td>
+        </tr>
+        <tr>
+            <td>Client 94</td>
+            <td>[52.745749, 41.448159]</td>
+            <td>laptop: 3, smartphone: 3, bicycle: 2, washing machine: 2</td>
+            <td>13:00 – 14:0</td>
+        </tr>
+        <tr>
+            <td>Client 95</td>
+            <td>[52.746752, 41.433836]</td>
+            <td>smartphone: 2, tv: 2, bicycle: 3</td>
+            <td>10:30 – 11:30</td>
+        </tr>
+        <tr>
+            <td>Client 96</td>
+            <td>[52.755906, 41.407167]</td>
+            <td>smartphone: 2, tv: 2</td>
+            <td>15:00 – 16:0</td>
+        </tr>
+        <tr>
+            <td>Client 97</td>
+            <td>[52.725764, 41.395508]</td>
+            <td>smartphone: 3, bicycle: 2, laptop: 3, tv: 3</td>
+            <td>13:30 – 14:30</td>
+        </tr>
+        <tr>
+            <td>Client 98</td>
+            <td>[52.73643, 41.458152]</td>
+            <td>washing machine: 1, bicycle: 3, smartphone: 1</td>
+            <td>6:00 – 7:0</td>
+        </tr>
+        <tr>
+            <td>Client 99</td>
+            <td>[52.705389, 41.457728]</td>
+            <td>laptop: 3, bicycle: 3, washing machine: 3, smartphone: 1</td>
+            <td>7:30 – 8:30</td>
+        </tr>
+        <tr>
+            <td>Client 100</td>
+            <td>[52.746534, 41.416968]</td>
+            <td>tv: 3, laptop: 2</td>
+            <td>14:00 – 15:0</td>
+        </tr>
+        </tbody>
+    </table>
 </div>
-
-<h2>Склад</h2>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Координаты</th>
-        <th>Товары и наличие</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Склад 1</td>
-        <td>[52.743628, 41.424363]</td>
-        <td>
-            <ul>
-                <li>smartphone — 1000 шт (вес 1)</li>
-                <li>laptop — 1000 шт (вес 1)</li>
-                <li>washing machine — 50 шт (вес 5)</li>
-                <li>tv — 50 шт (вес 3)</li>
-                <li>bicycle — 100 шт (вес 4)</li>
-            </ul>
-        </td>
-    </tr>
-    </tbody>
-</table>
-
-<h2>Транспорт</h2>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Грузоподъёмность</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Машина 1</td>
-        <td>200</td>
-    </tr>
-    <tr>
-        <td>Машина 2</td>
-        <td>150</td>
-    </tr>
-    <tr>
-        <td>Машина 3</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>Машина 4</td>
-        <td>250</td>
-    </tr>
-    <tr>
-        <td>Машина 5</td>
-        <td>300</td>
-    </tr>
-    <tr>
-        <td>Машина 6</td>
-        <td>350</td>
-    </tr>
-    <tr>
-        <td>Машина 7</td>
-        <td>200</td>
-    </tr>
-    <tr>
-        <td>Машина 8</td>
-        <td>400</td>
-    </tr>
-    <tr>
-        <td>Машина 9</td>
-        <td>300</td>
-    </tr>
-    <tr>
-        <td>Машина 10</td>
-        <td>350</td>
-    </tr>
-    </tbody>
-</table>
-
-<h2>Клиенты</h2>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Координаты</th>
-        <th>Заказ</th>
-        <th>Временное окно</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Клиент 1</td>
-        <td>[52.705371, 41.44582]</td>
-        <td>laptop: 1, tv: 1</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Клиент 2</td>
-        <td>[52.69611, 41.416908]</td>
-        <td>smartphone: 2, washing machine: 1, tv: 1</td>
-        <td>20:00 – 21:00</td>
-    </tr>
-    <tr>
-        <td>Клиент 3</td>
-        <td>[52.766732, 41.457028]</td>
-        <td>bicycle: 2, smartphone: 3, laptop: 2</td>
-        <td>10:30 – 11:30</td>
-    </tr>
-    <tr>
-        <td>Клиент 4</td>
-        <td>[52.736892, 41.405755]</td>
-        <td>washing machine: 3, laptop: 2, bicycle: 2, tv: 1</td>
-        <td>6:00 – 7:00</td>
-    </tr>
-    <tr>
-        <td>Клиент 5</td>
-        <td>[52.696158, 41.395516]</td>
-        <td>laptop: 1, tv: 2, washing machine: 3, smartphone: 2</td>
-        <td>12:30 – 13:30</td>
-    </tr>
-    <tr>
-        <td>Client 6</td>
-        <td>[52.736649, 41.423851]</td>
-        <td>smartphone: 3, bicycle: 3, laptop: 1</td>
-        <td>19:00 – 20:0</td>
-    </tr>
-    <tr>
-        <td>Client 7</td>
-        <td>[52.716464, 41.417606]</td>
-        <td>tv: 3, smartphone: 2, bicycle: 2, washing machine: 1, laptop: 3</td>
-        <td>19:30 – 20:30</td>
-    </tr>
-    <tr>
-        <td>Client 8</td>
-        <td>[52.746124, 41.447874]</td>
-        <td>tv: 1, bicycle: 2, laptop: 1, washing machine: 2</td>
-        <td>20:00 – 21:0</td>
-    </tr>
-    <tr>
-        <td>Client 9</td>
-        <td>[52.716227, 41.418524]</td>
-        <td>laptop: 2, bicycle: 3, washing machine: 2</td>
-        <td>11:30 – 12:30</td>
-    </tr>
-    <tr>
-        <td>Client 10</td>
-        <td>[52.697154, 41.418885]</td>
-        <td>washing machine: 2, smartphone: 3, laptop: 1</td>
-        <td>20:00 – 21:0</td>
-    </tr>
-    <tr>
-        <td>Client 11</td>
-        <td>[52.756717, 41.475609]</td>
-        <td>smartphone: 2, washing machine: 2, tv: 2</td>
-        <td>17:30 – 18:30</td>
-    </tr>
-    <tr>
-        <td>Client 12</td>
-        <td>[52.746692, 41.474143]</td>
-        <td>washing machine: 2, laptop: 1, tv: 2, smartphone: 3</td>
-        <td>7:00 – 8:0</td>
-    </tr>
-    <tr>
-        <td>Client 13</td>
-        <td>[52.706711, 41.407492]</td>
-        <td>tv: 1, bicycle: 2, laptop: 3, washing machine: 3</td>
-        <td>6:30 – 7:30</td>
-    </tr>
-    <tr>
-        <td>Client 14</td>
-        <td>[52.766042, 41.458254]</td>
-        <td>laptop: 1, tv: 1, bicycle: 3, washing machine: 1</td>
-        <td>12:00 – 13:0</td>
-    </tr>
-    <tr>
-        <td>Client 15</td>
-        <td>[52.716201, 41.415721]</td>
-        <td>tv: 1, washing machine: 3</td>
-        <td>12:30 – 13:30</td>
-    </tr>
-    <tr>
-        <td>Client 16</td>
-        <td>[52.695412, 41.487618]</td>
-        <td>bicycle: 1, smartphone: 3</td>
-        <td>20:00 – 21:0</td>
-    </tr>
-    <tr>
-        <td>Client 17</td>
-        <td>[52.726408, 41.397991]</td>
-        <td>washing machine: 2, laptop: 2, bicycle: 2, smartphone: 1</td>
-        <td>9:30 – 10:30</td>
-    </tr>
-    <tr>
-        <td>Client 18</td>
-        <td>[52.746782, 41.426947]</td>
-        <td>washing machine: 3, bicycle: 3, laptop: 1</td>
-        <td>7:00 – 8:0</td>
-    </tr>
-    <tr>
-        <td>Client 19</td>
-        <td>[52.706534, 41.464689]</td>
-        <td>laptop: 1, bicycle: 2</td>
-        <td>15:30 – 16:30</td>
-    </tr>
-    <tr>
-        <td>Client 20</td>
-        <td>[52.746694, 41.44517]</td>
-        <td>laptop: 1, smartphone: 1</td>
-        <td>7:00 – 8:0</td>
-    </tr>
-    <tr>
-        <td>Client 21</td>
-        <td>[52.696459, 41.435317]</td>
-        <td>tv: 3, washing machine: 1, smartphone: 3</td>
-        <td>16:30 – 17:30</td>
-    </tr>
-    <tr>
-        <td>Client 22</td>
-        <td>[52.766041, 41.426579]</td>
-        <td>bicycle: 1, smartphone: 2, tv: 1</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 23</td>
-        <td>[52.696805, 41.438834]</td>
-        <td>washing machine: 3, smartphone: 3, tv: 3</td>
-        <td>11:30 – 12:30</td>
-    </tr>
-    <tr>
-        <td>Client 24</td>
-        <td>[52.696526, 41.486238]</td>
-        <td>bicycle: 3, washing machine: 1, smartphone: 1</td>
-        <td>8:00 – 9:0</td>
-    </tr>
-    <tr>
-        <td>Client 25</td>
-        <td>[52.76575, 41.394116]</td>
-        <td>bicycle: 1, laptop: 3, smartphone: 1, tv: 3</td>
-        <td>19:30 – 20:30</td>
-    </tr>
-    <tr>
-        <td>Client 26</td>
-        <td>[52.695526, 41.477396]</td>
-        <td>laptop: 1, bicycle: 2, washing machine: 1, smartphone: 1</td>
-        <td>19:00 – 20:0</td>
-    </tr>
-    <tr>
-        <td>Client 27</td>
-        <td>[52.695859, 41.404147]</td>
-        <td>laptop: 2, tv: 1, washing machine: 3, bicycle: 3</td>
-        <td>10:30 – 11:30</td>
-    </tr>
-    <tr>
-        <td>Client 28</td>
-        <td>[52.736616, 41.415301]</td>
-        <td>smartphone: 2, tv: 2, laptop: 3</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 29</td>
-        <td>[52.76668, 41.474193]</td>
-        <td>tv: 1, smartphone: 2, laptop: 2</td>
-        <td>18:30 – 19:30</td>
-    </tr>
-    <tr>
-        <td>Client 30</td>
-        <td>[52.746833, 41.468776]</td>
-        <td>tv: 3, laptop: 1, bicycle: 1, smartphone: 1</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 31</td>
-        <td>[52.74669, 41.458204]</td>
-        <td>tv: 1, washing machine: 3, bicycle: 1, smartphone: 1</td>
-        <td>19:30 – 20:30</td>
-    </tr>
-    <tr>
-        <td>Client 32</td>
-        <td>[52.746384, 41.45558]</td>
-        <td>laptop: 1, tv: 3, washing machine: 3</td>
-        <td>10:00 – 11:0</td>
-    </tr>
-    <tr>
-        <td>Client 33</td>
-        <td>[52.766991, 41.424162]</td>
-        <td>bicycle: 2, washing machine: 2, tv: 1</td>
-        <td>9:30 – 10:30</td>
-    </tr>
-    <tr>
-        <td>Client 34</td>
-        <td>[52.726641, 41.465113]</td>
-        <td>smartphone: 1, laptop: 2, bicycle: 1</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 35</td>
-        <td>[52.70578, 41.40692]</td>
-        <td>smartphone: 1, washing machine: 3, bicycle: 3, tv: 2</td>
-        <td>6:30 – 7:30</td>
-    </tr>
-    <tr>
-        <td>Client 36</td>
-        <td>[52.706553, 41.405693]</td>
-        <td>laptop: 1, tv: 2, washing machine: 2, bicycle: 3</td>
-        <td>7:00 – 8:0</td>
-    </tr>
-    <tr>
-        <td>Client 37</td>
-        <td>[52.70571, 41.415127]</td>
-        <td>washing machine: 2, bicycle: 3, laptop: 1, smartphone: 3</td>
-        <td>17:30 – 18:30</td>
-    </tr>
-    <tr>
-        <td>Client 38</td>
-        <td>[52.767049, 41.475705]</td>
-        <td>bicycle: 2, tv: 3, washing machine: 1, laptop: 1</td>
-        <td>9:00 – 10:0</td>
-    </tr>
-    <tr>
-        <td>Client 39</td>
-        <td>[52.766898, 41.484435]</td>
-        <td>smartphone: 3, tv: 3, laptop: 1</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Client 40</td>
-        <td>[52.745793, 41.465]</td>
-        <td>tv: 3, bicycle: 2, laptop: 2</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 41</td>
-        <td>[52.705698, 41.418535]</td>
-        <td>laptop: 1, tv: 2, smartphone: 1, washing machine: 2</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Client 42</td>
-        <td>[52.705782, 41.414941]</td>
-        <td>smartphone: 1, tv: 1, laptop: 2</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 43</td>
-        <td>[52.695381, 41.477734]</td>
-        <td>bicycle: 1, tv: 3, laptop: 2</td>
-        <td>14:30 – 15:30</td>
-    </tr>
-    <tr>
-        <td>Client 44</td>
-        <td>[52.756012, 41.44889]</td>
-        <td>smartphone: 3, tv: 1</td>
-        <td>13:00 – 14:0</td>
-    </tr>
-    <tr>
-        <td>Client 45</td>
-        <td>[52.766898, 41.46397]</td>
-        <td>bicycle: 1, washing machine: 1, laptop: 1, tv: 1</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Client 46</td>
-        <td>[52.747116, 41.487198]</td>
-        <td>laptop: 1, smartphone: 1, tv: 3</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 47</td>
-        <td>[52.72575, 41.405113]</td>
-        <td>smartphone: 2, tv: 3, bicycle: 2</td>
-        <td>15:30 – 16:30</td>
-    </tr>
-    <tr>
-        <td>Client 48</td>
-        <td>[52.695464, 41.484117]</td>
-        <td>tv: 1, washing machine: 1, bicycle: 2</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 49</td>
-        <td>[52.745432, 41.435781]</td>
-        <td>smartphone: 2, washing machine: 1, tv: 3</td>
-        <td>11:30 – 12:30</td>
-    </tr>
-    <tr>
-        <td>Client 50</td>
-        <td>[52.725722, 41.475147]</td>
-        <td>smartphone: 3, tv: 2, washing machine: 1, laptop: 1</td>
-        <td>14:00 – 15:0</td>
-    </tr>
-    <tr>
-        <td>Client 51</td>
-        <td>[52.755893, 41.434971]</td>
-        <td>washing machine: 3, bicycle: 1, smartphone: 2, tv: 3</td>
-        <td>20:30 – 21:30</td>
-    </tr>
-    <tr>
-        <td>Client 52</td>
-        <td>[52.715671, 41.485794]</td>
-        <td>smartphone: 1, laptop: 2, bicycle: 3</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 53</td>
-        <td>[52.736188, 41.477807]</td>
-        <td>laptop: 1, washing machine: 2, bicycle: 2</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Client 54</td>
-        <td>[52.74544, 41.42491]</td>
-        <td>tv: 1, smartphone: 2, bicycle: 1</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 55</td>
-        <td>[52.735755, 41.45489]</td>
-        <td>washing machine: 1, bicycle: 2, smartphone: 3, laptop: 2, tv: 3</td>
-        <td>20:30 – 21:30</td>
-    </tr>
-    <tr>
-        <td>Client 56</td>
-        <td>[52.766276, 41.416602]</td>
-        <td>smartphone: 1, washing machine: 2, tv: 1, laptop: 2, bicycle: 1</td>
-        <td>12:00 – 13:0</td>
-    </tr>
-    <tr>
-        <td>Client 57</td>
-        <td>[52.755659, 41.405111]</td>
-        <td>washing machine: 1, laptop: 3, smartphone: 1, tv: 3</td>
-        <td>15:30 – 16:30</td>
-    </tr>
-    <tr>
-        <td>Client 58</td>
-        <td>[52.715956, 41.45633]</td>
-        <td>smartphone: 1, tv: 1, washing machine: 2, laptop: 3</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 59</td>
-        <td>[52.72691, 41.437281]</td>
-        <td>smartphone: 1, laptop: 3</td>
-        <td>9:30 – 10:30</td>
-    </tr>
-    <tr>
-        <td>Client 60</td>
-        <td>[52.715834, 41.457519]</td>
-        <td>bicycle: 2, tv: 1, smartphone: 1, washing machine: 2</td>
-        <td>18:00 – 19:0</td>
-    </tr>
-    <tr>
-        <td>Client 61</td>
-        <td>[52.715448, 41.404402]</td>
-        <td>laptop: 1, washing machine: 3, tv: 2</td>
-        <td>11:30 – 12:30</td>
-    </tr>
-    <tr>
-        <td>Client 62</td>
-        <td>[52.76643, 41.425889]</td>
-        <td>bicycle: 3, washing machine: 3, tv: 3, laptop: 2</td>
-        <td>14:00 – 15:0</td>
-    </tr>
-    <tr>
-        <td>Client 63</td>
-        <td>[52.736293, 41.48882]</td>
-        <td>laptop: 2, washing machine: 2, bicycle: 1</td>
-        <td>17:30 – 18:30</td>
-    </tr>
-    <tr>
-        <td>Client 64</td>
-        <td>[52.765848, 41.474269]</td>
-        <td>laptop: 1, washing machine: 3, smartphone: 3</td>
-        <td>12:00 – 13:0</td>
-    </tr>
-    <tr>
-        <td>Client 65</td>
-        <td>[52.737083, 41.475853]</td>
-        <td>laptop: 2, bicycle: 2, smartphone: 3, washing machine: 3</td>
-        <td>14:30 – 15:30</td>
-    </tr>
-    <tr>
-        <td>Client 66</td>
-        <td>[52.726749, 41.414328]</td>
-        <td>washing machine: 1, bicycle: 3, laptop: 3</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 67</td>
-        <td>[52.716068, 41.435824]</td>
-        <td>laptop: 1, tv: 1, washing machine: 2, bicycle: 3</td>
-        <td>12:30 – 13:30</td>
-    </tr>
-    <tr>
-        <td>Client 68</td>
-        <td>[52.745621, 41.424896]</td>
-        <td>bicycle: 3, smartphone: 1, laptop: 1</td>
-        <td>13:00 – 14:0</td>
-    </tr>
-    <tr>
-        <td>Client 69</td>
-        <td>[52.746067, 41.42651]</td>
-        <td>smartphone: 3, tv: 3, bicycle: 2, washing machine: 2</td>
-        <td>20:30 – 21:30</td>
-    </tr>
-    <tr>
-        <td>Client 70</td>
-        <td>[52.70708, 41.428317]</td>
-        <td>bicycle: 1, washing machine: 3, laptop: 1</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 71</td>
-        <td>[52.766742, 41.467469]</td>
-        <td>tv: 1, smartphone: 1, washing machine: 3, laptop: 1</td>
-        <td>14:30 – 15:30</td>
-    </tr>
-    <tr>
-        <td>Client 72</td>
-        <td>[52.725924, 41.445375]</td>
-        <td>laptop: 3, smartphone: 2, bicycle: 3</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 73</td>
-        <td>[52.725511, 41.454404]</td>
-        <td>laptop: 1, bicycle: 2, smartphone: 3, tv: 2</td>
-        <td>19:30 – 20:30</td>
-    </tr>
-    <tr>
-        <td>Client 74</td>
-        <td>[52.716035, 41.404672]</td>
-        <td>laptop: 1, smartphone: 3, bicycle: 1, washing machine: 1</td>
-        <td>12:00 – 13:0</td>
-    </tr>
-    <tr>
-        <td>Client 75</td>
-        <td>[52.716153, 41.406683]</td>
-        <td>tv: 3, smartphone: 3, laptop: 2</td>
-        <td>12:30 – 13:30</td>
-    </tr>
-    <tr>
-        <td>Client 76</td>
-        <td>[52.736666, 41.467452]</td>
-        <td>bicycle: 3, laptop: 1, tv: 3, washing machine: 2</td>
-        <td>18:00 – 19:0</td>
-    </tr>
-    <tr>
-        <td>Client 77</td>
-        <td>[52.726814, 41.448403]</td>
-        <td>washing machine: 3, smartphone: 2, laptop: 1, bicycle: 1</td>
-        <td>9:30 – 10:30</td>
-    </tr>
-    <tr>
-        <td>Client 78</td>
-        <td>[52.715839, 41.466543]</td>
-        <td>bicycle: 1, washing machine: 2, tv: 1, smartphone: 2</td>
-        <td>20:00 – 21:0</td>
-    </tr>
-    <tr>
-        <td>Client 79</td>
-        <td>[52.766307, 41.434935]</td>
-        <td>smartphone: 1, laptop: 1, tv: 3, bicycle: 3</td>
-        <td>16:30 – 17:30</td>
-    </tr>
-    <tr>
-        <td>Client 80</td>
-        <td>[52.74656, 41.464591]</td>
-        <td>smartphone: 1, washing machine: 3, bicycle: 1, tv: 2</td>
-        <td>10:00 – 11:0</td>
-    </tr>
-    <tr>
-        <td>Client 81</td>
-        <td>[52.72584, 41.42507]</td>
-        <td>laptop: 1, bicycle: 3, washing machine: 3, smartphone: 1, tv: 1</td>
-        <td>8:30 – 9:30</td>
-    </tr>
-    <tr>
-        <td>Client 82</td>
-        <td>[52.76696, 41.437057]</td>
-        <td>laptop: 1, smartphone: 2, washing machine: 1</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 83</td>
-        <td>[52.736591, 41.487089]</td>
-        <td>washing machine: 1, bicycle: 1, laptop: 2</td>
-        <td>9:30 – 10:30</td>
-    </tr>
-    <tr>
-        <td>Client 84</td>
-        <td>[52.756931, 41.425184]</td>
-        <td>tv: 2, washing machine: 3</td>
-        <td>9:00 – 10:0</td>
-    </tr>
-    <tr>
-        <td>Client 85</td>
-        <td>[52.706727, 41.486486]</td>
-        <td>bicycle: 2, washing machine: 3, laptop: 3</td>
-        <td>18:30 – 19:30</td>
-    </tr>
-    <tr>
-        <td>Client 86</td>
-        <td>[52.706097, 41.42591]</td>
-        <td>washing machine: 1, laptop: 2, smartphone: 3</td>
-        <td>11:00 – 12:0</td>
-    </tr>
-    <tr>
-        <td>Client 87</td>
-        <td>[52.766428, 41.43737]</td>
-        <td>laptop: 1, tv: 3, bicycle: 1, smartphone: 3</td>
-        <td>17:30 – 18:30</td>
-    </tr>
-    <tr>
-        <td>Client 88</td>
-        <td>[52.716309, 41.45431]</td>
-        <td>laptop: 2, washing machine: 2, tv: 3</td>
-        <td>13:00 – 14:0</td>
-    </tr>
-    <tr>
-        <td>Client 89</td>
-        <td>[52.726531, 41.465337]</td>
-        <td>washing machine: 2, smartphone: 3, tv: 2</td>
-        <td>6:30 – 7:30</td>
-    </tr>
-    <tr>
-        <td>Client 90</td>
-        <td>[52.755556, 41.446419]</td>
-        <td>washing machine: 2, bicycle: 2, smartphone: 3, tv: 1</td>
-        <td>17:00 – 18:0</td>
-    </tr>
-    <tr>
-        <td>Client 91</td>
-        <td>[52.72551, 41.485943]</td>
-        <td>washing machine: 2, laptop: 2, bicycle: 3</td>
-        <td>17:30 – 18:30</td>
-    </tr>
-    <tr>
-        <td>Client 92</td>
-        <td>[52.705869, 41.395828]</td>
-        <td>laptop: 2, washing machine: 1, bicycle: 3</td>
-        <td>16:00 – 17:0</td>
-    </tr>
-    <tr>
-        <td>Client 93</td>
-        <td>[52.746178, 41.398941]</td>
-        <td>smartphone: 2, washing machine: 2, laptop: 1, tv: 1</td>
-        <td>12:30 – 13:30</td>
-    </tr>
-    <tr>
-        <td>Client 94</td>
-        <td>[52.745749, 41.448159]</td>
-        <td>laptop: 3, smartphone: 3, bicycle: 2, washing machine: 2</td>
-        <td>13:00 – 14:0</td>
-    </tr>
-    <tr>
-        <td>Client 95</td>
-        <td>[52.746752, 41.433836]</td>
-        <td>smartphone: 2, tv: 2, bicycle: 3</td>
-        <td>10:30 – 11:30</td>
-    </tr>
-    <tr>
-        <td>Client 96</td>
-        <td>[52.755906, 41.407167]</td>
-        <td>smartphone: 2, tv: 2</td>
-        <td>15:00 – 16:0</td>
-    </tr>
-    <tr>
-        <td>Client 97</td>
-        <td>[52.725764, 41.395508]</td>
-        <td>smartphone: 3, bicycle: 2, laptop: 3, tv: 3</td>
-        <td>13:30 – 14:30</td>
-    </tr>
-    <tr>
-        <td>Client 98</td>
-        <td>[52.73643, 41.458152]</td>
-        <td>washing machine: 1, bicycle: 3, smartphone: 1</td>
-        <td>6:00 – 7:0</td>
-    </tr>
-    <tr>
-        <td>Client 99</td>
-        <td>[52.705389, 41.457728]</td>
-        <td>laptop: 3, bicycle: 3, washing machine: 3, smartphone: 1</td>
-        <td>7:30 – 8:30</td>
-    </tr>
-    <tr>
-        <td>Client 100</td>
-        <td>[52.746534, 41.416968]</td>
-        <td>tv: 3, laptop: 2</td>
-        <td>14:00 – 15:0</td>
-    </tr>
-    </tbody>
-</table>
-
 
 </body>
 </html>
