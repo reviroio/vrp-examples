@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Routing</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://rawgit.com/openplans/Leaflet.AnimatedMarker/master/src/AnimatedMarker.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        height: 100%;
+        overflow: auto;
+    }
+
+    h1, h2 {
+        color: #333;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+    }
+</style>
+<h1>Информация по логистическим платформам</h1>
+
+<div class="description">
+    Входные данные для рассчета маршрутов по развозке сотрудников до мест работы и обратно.
+    <br>
+    Программа расчитывает оптимальное кол-во машин,
+    требуемых для перевозки сотрудников, поэтому в таблице машин стоит указывать только по одному виду машин,
+    программа расчитает сколько машин определенного типа требуется.
+</div>
+
+<h2>Координаты стоянки</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Координаты</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>[52.74436, 41.478213]</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Транспорт</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Тип</th>
+        <th>Время работы</th>
+        <th>Вместимость</th>
+        <th>Стоимость за км</th>
+        <th>Стоимость за маршрут</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>corporate</td>
+        <td>08:00 – 20:00</td>
+        <td>5</td>
+        <td>10</td>
+        <td>-</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<h2>Места прибытия</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Координаты</th>
+        <th>Рабочее время</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>1</td>
+        <td>[52.739143, 41.424569]</td>
+        <td>09:00 – 18:00</td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>[52.754064, 41.454011]</td>
+        <td>10:00 – 19:00</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>[52.729204, 41.480243]</td>
+        <td>08:00 – 17:00</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<h2>Сотрудники</h2>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Координаты</th>
+        <th>Место прибытия (id)</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr>
+        <td>100</td>
+        <td>Алексей</td>
+        <td>[52.751038, 41.474426]</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>101</td>
+        <td>Виктор</td>
+        <td>[52.758649, 41.424128]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>102</td>
+        <td>Дмитрий</td>
+        <td>[52.75179, 41.435926]</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>103</td>
+        <td>Евгений</td>
+        <td>[52.725003, 41.407828]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>104</td>
+        <td>Сергей</td>
+        <td>[52.71607, 41.448501]</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>105</td>
+        <td>Михаил</td>
+        <td>[52.736378, 41.48374]</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>106</td>
+        <td>Артём</td>
+        <td>[52.702131, 41.455302]</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>107</td>
+        <td>Игорь</td>
+        <td>[52.755276, 41.415989]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>108</td>
+        <td>Андрей</td>
+        <td>[52.736406, 41.38303]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>109</td>
+        <td>Николай</td>
+        <td>[52.707437, 41.423813]</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>110</td>
+        <td>Василий</td>
+        <td>[52.698628, 41.472585]</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>111</td>
+        <td>Роман</td>
+        <td>[52.764086, 41.389109]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>113</td>
+        <td>Тимур</td>
+        <td>[52.731108, 41.431099]</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>114</td>
+        <td>Ярослав</td>
+        <td>[52.74836, 41.467491]</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>115</td>
+        <td>Валерий</td>
+        <td>[52.733395, 41.427837]</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>116</td>
+        <td>Станислав</td>
+        <td>[52.725182, 41.472984]</td>
+        <td>3</td>
+    </tr>
+
+    <tr>
+        <td>117</td>
+        <td>Кирилл</td>
+        <td>[52.707537, 41.46168]</td>
+        <td>3</td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>

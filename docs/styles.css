@@ -13,12 +13,12 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    --map-height: 70%;
+    --map-height: 60%;
 }
 
 #map-container {
     position: relative;
-    height: 70%;
+    height: 60%;
     min-height: 100px;
     max-height: 95%;
     overflow: hidden;
@@ -48,7 +48,7 @@ html, body {
     overflow-y: auto;
     background: #f9f9f9;
     padding: 10px;
-    height: calc(100% - var(--map-height, 70%));
+    height: calc(100% - var(--map-height, 60%));
 }
 
 

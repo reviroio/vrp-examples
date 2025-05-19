@@ -27,14 +27,33 @@
     </div>
 
     <div id="routes-table">
-        <div style="padding: 10px;">
-            <label for="platformSelect"><strong>Выбери платформу:</strong></label>
+        <div style="padding: 10px 0">
+            <table>
+            <thead>
+            <tr>
+                <th>Точки прибытия</th>
+                <th>Кол-во сотрудников</th>
+                <th>Кол-во машин</th>
+            </tr>
+            </thead>
+                <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>17</td>
+                    <td>5</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div style="padding: 10px 0">
+            <label for="platformSelect"><strong>Выберите точку прибытия:</strong></label>
             <select id="platformSelect">
                 <option value="all">Все</option>
             </select>
         </div>
-        <div style="padding: 10px;">
-            <label for="directionSelect"><strong>Выбери направление:</strong></label>
+        <div style="padding: 10px 0">
+            <label for="directionSelect"><strong>Выберите направление:</strong></label>
             <select id="directionSelect">
                 <option value="to">Утром</option>
                 <option value="from">Вечером</option>
@@ -44,12 +63,12 @@
         <table>
             <thead>
             <tr>
-                <th>Vehicle</th>
-                <th>Time</th>
-                <th>Distance</th>
-                <th>Cost</th>
-                <th>Capacity</th>
-                <th>Route</th>
+                <th>Машина</th>
+                <th>Время</th>
+                <th>Дистанция</th>
+                <th>Стоимость</th>
+                <th>Вместимость</th>
+                <th>Маршрут</th>
             </tr>
             </thead>
             <tbody id="tableBody"></tbody>
@@ -60,9 +79,9 @@
 <script>
     const map = L.map('map').setView([52.731779, 41.440842], 13);
     const colors = {
-        "red": ["#FF2400", "#DC143C", "#B22222", "#CD5C5C", "#F08080", "#8B0000", "#FF6347", "#FA8072", "#FFA07A", "#E30B5D", "#800020", "#FF0000", "#E34234", "#9B111E", "#BF4F51"],
-        "green": ["#006400", "#228B22", "#66CDAA", "#8FBC8F", "#20B2AA", "#98FB98", "#90EE90", "#00FF7F", "#00FA9A", "#7CFC00", "#7FFF00", "#ADFF2F", "#32CD32"],
-        "blue": ["#000080", "#191970", "#4169E1", "#1E90FF", "#87CEEB", "#87CEFA", "#4682B4", "#6495ED", "#00BFFF", "#89CFF0", "#B0E0E6", "#F0F8FF", "#0047AB", "#007FFF", "#1560BD"],
+        "red": ["#FF2400","#8B0000", "#CD5C5C", "#F08080", "#B22222", "#FF6347", "#FA8072", "#FFA07A", "#E30B5D", "#800020", "#FF0000", "#E34234", "#9B111E", "#BF4F51"],
+        "green": ["#228B22", "#66CDAA", "#8FBC8F", "#20B2AA", "#98FB98", "#90EE90", "#00FF7F", "#00FA9A", "#7CFC00", "#7FFF00", "#ADFF2F", "#32CD32"],
+        "blue": ["#191970", "#4169E1", "#1E90FF", "#87CEEB", "#87CEFA", "#4682B4", "#6495ED", "#00BFFF", "#89CFF0", "#B0E0E6", "#F0F8FF", "#0047AB", "#007FFF", "#1560BD"],
         "purple": ["#8F00FF", "#DA70D6", "#BA55D3", "#9932CC", "#DDA0DD", "#9966CC", "#9400D3", "#8A2BE2", "#800080", "#E0B0FF", "#C9A0DC", "#B7AFA3", "#702963"],
         "pink": ["#FFC0CB", "#FFB6C1", "#FF69B4", "#FF1493", "#DB7093", "#C71585", "#DA70D6", "#FF00FF", "#FF00FF", "#FFBCD9", "#FFC1CC", "#FC8EAC", "#FF007F", "#FA86C4", "#DE5D83"]
     }
@@ -129,19 +148,19 @@
                 color: "#000",
                 fillColor: "#000000",
                 fillOpacity: 1
-            }).bindPopup("depot");
+            }).bindPopup("Точка отправления");
 
             const platform = L.circleMarker(coords[coords.length - 1], {
                 radius: 8,
                 color: "#000",
                 fillColor: "#FFD700",
                 fillOpacity: 1
-            }).bindPopup(`Platform ${feature.properties.platform_id}`);
+            }).bindPopup(`Точка прибытия ${feature.properties.platform_id}`);
 
             const polyline = L.polyline(coords, {
                 color,
                 weight: 3
-            }).bindPopup(`Vehicle: ${feature.properties.vehicle_id}`);
+            }).bindPopup(`Машина ${feature.properties.vehicle_id}`);
 
             animations[platformId][vehicleId] = () => tintImage('car.png', color, (coloredIconUrl) => {
                 const _polyline = L.polyline(coords);
@@ -168,7 +187,7 @@
             mainIndexes.forEach((index, j) => {
                 const time = arrivalTimes[j] || "—";
                 const marker = L.marker(coords[index])
-                    .bindPopup((names.length >= j && j !== 0 ? `<b>${names[j - 1]}</b>` : j === 0 ? `<b>Depot</b>` : `<b>Platform</b>`) + `<br>Time: ${time}`);
+                    .bindPopup((names.length >= j && j !== 0 ? `<b>${names[j - 1]}</b>` : j === 0 ? `<b>Точка отправления</b>` : `<b>Точка прибытия</b>`) + `<br>Время прибытия: ${time}`);
                 platformGroups[platformId].addLayer(marker);
                 vehicleLayer.addLayer(marker);
                 platformGroups["all"].addLayer(marker);
@@ -189,12 +208,12 @@
             props.timeline = props.arrival_times.map((time, ind) => {
                 const minutes = timeToMinutes(time);
                 if (ind === 0) {
-                    return {"name": "Depot", time, minutes};
+                    return {"name": "Точка отправления", time, minutes};
                 }
                 if (ind <= props.names.length) {
                     return {"name": props.names[ind - 1], time, minutes};
                 }
-                return {"name": "Platform", time, minutes};
+                return {"name": "Точка прибытия", time, minutes};
             });
             return props;
         });
@@ -202,7 +221,7 @@
         platformSelect.innerHTML = '<option value="all">Все</option>';
         Object.keys(platformGroups).forEach(platform => {
             if (platform !== "all") {
-                platformSelect.innerHTML += `<option value=${platform}>Platform ${platform}</option>`;
+                platformSelect.innerHTML += `<option value=${platform}>Точка прибытия ${platform}</option>`;
             }
         });
 

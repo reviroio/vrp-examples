@@ -14,11 +14,11 @@
 <div id="nav-placeholder"></div>
 
 <script>
-  fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    });
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
 </script>
 <div id="container">
     <div id="map-container">
@@ -27,14 +27,31 @@
     </div>
 
     <div id="routes-table">
+        <div style="padding: 10px 0">
+            <table>
+                <thead>
+                <tr>
+                    <th>Кол-во клиентов</th>
+                    <th>Кол-во машин</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>10</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
         <table>
             <thead>
             <tr>
-                <th>Vehicle</th>
-                <th>Time</th>
-                <th>Distance</th>
-                <th>Capacity</th>
-                <th>Loads</th>
+                <th>Машина</th>
+                <th>Время</th>
+                <th>Расстояние</th>
+                <th>Вместимость</th>
+                <th>Отгружаемый груз</th>
             </tr>
             </thead>
             <tbody id="tableBody"></tbody>
@@ -97,7 +114,14 @@
         const animations = {};
 
         features.forEach(feature => {
-            const {main_points: mainIndexes, vehicle_id: vehicleId, duration, distance, vehicle_capacity: capacity, demands} = feature.properties;
+            const {
+                main_points: mainIndexes,
+                vehicle_id: vehicleId,
+                duration,
+                distance,
+                vehicle_capacity: capacity,
+                demands
+            } = feature.properties;
             const coords = feature.geometry.coordinates;
             const names = feature.properties.clients.split(";");
             const color = colors[vehicleId];
@@ -112,12 +136,12 @@
                 color: "#000",
                 fillColor: "#000000",
                 fillOpacity: 1
-            }).bindPopup("Warehouse");
+            }).bindPopup("Склад");
 
             const polyline = L.polyline(coords, {
                 color,
                 weight: 3
-            }).bindPopup(`Vehicle: ${feature.properties.vehicle_id}`);
+            }).bindPopup(`Машина ${feature.properties.vehicle_id}`);
 
             animations[vehicleId] = () => tintImage('car.png', color, (coloredIconUrl) => {
                 const _polyline = L.polyline(coords);
@@ -141,7 +165,7 @@
 
             mainIndexes.forEach((index, j) => {
                 const marker = L.marker(coords[index])
-                    .bindPopup((names.length >= j && j !== 0 ? `<b>${names[j - 1]}</b>` : `<b>Warehouse</b>`));
+                    .bindPopup((names.length >= j && j !== 0 ? `<b>${names[j - 1]}</b>` : `<b>Слад</b>`));
                 routeGroups[vehicleId].addLayer(marker);
                 routeGroups["all"].addLayer(marker);
             });
@@ -166,10 +190,10 @@
                 const row = document.createElement('tr');
                 const loads = document.createElement("td")
                 loads.className = "route-row"
-                route.loads.forEach((curr, i) =>{
+                route.loads.forEach((curr, i) => {
                     const segment = document.createElement("div")
                     segment.className = 'segment'
-                    segment.title = `${curr} items weight loaded`
+                    segment.title = `${curr} единиц товара доставлено`
                     segment.style.flexGrow = curr;
                     segment.style.backgroundColor = colors[route.vehicle_id]
                     loads.appendChild(segment)
@@ -177,7 +201,7 @@
 
                 row.dataset.vehicleId = route.vehicle_id;
                 row.innerHTML = `
-                    <td>${route.vehicle_id}</td>
+                    <td>${route.vehicle_id + 1}</td>
                     <td>${route.duration}</td>
                     <td>${route.distance}</td>
                     <td>${route.vehicle_capacity}</td>
