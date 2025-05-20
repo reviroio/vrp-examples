@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Маршрутный лист</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        .platform-block {
+            margin-bottom: 50px;
+        }
+
+        .container {
+            margin: 0 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+    fetch('../nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+<div class="container">
+    <h1>Маршрутный лист</h1>
+    <div class="platform-block">
+        <h2>Платформа 1 (Ожидаемое прибытие: 09:00)</h2>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_1<br>9 km <br>62.832₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:38</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Рената</td>
+                <td>08:43</td>
+                <td>[52.746497, 41.473844]</td>
+            </tr>
+            <tr>
+                <td>Максим</td>
+                <td>08:49</td>
+                <td>[52.755373, 41.448386]</td>
+            </tr>
+            <tr>
+                <td>Юлия</td>
+                <td>08:50</td>
+                <td>[52.755704, 41.44649]</td>
+            </tr>
+            <tr>
+                <td>Олег</td>
+                <td>08:51</td>
+                <td>[52.755466, 41.444554]</td>
+            </tr>
+            <tr>
+                <td>Владислав</td>
+                <td>08:56</td>
+                <td>[52.745874, 41.436388]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_2<br>13 km <br>88.417₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:37</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Альберт</td>
+                <td>08:46</td>
+                <td>[52.756838, 41.418091]</td>
+            </tr>
+            <tr>
+                <td>Эвелина</td>
+                <td>08:49</td>
+                <td>[52.76696, 41.41585]</td>
+            </tr>
+            <tr>
+                <td>Ольга</td>
+                <td>08:53</td>
+                <td>[52.755276, 41.415989]</td>
+            </tr>
+            <tr>
+                <td>Ян</td>
+                <td>08:56</td>
+                <td>[52.746544, 41.418128]</td>
+            </tr>
+            <tr>
+                <td>Арсентий</td>
+                <td>08:57</td>
+                <td>[52.745566, 41.417379]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_3<br>16 km <br>108.255₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:29</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Алёна</td>
+                <td>08:37</td>
+                <td>[52.726333, 41.487635]</td>
+            </tr>
+            <tr>
+                <td>Арсен</td>
+                <td>08:48</td>
+                <td>[52.716025, 41.424925]</td>
+            </tr>
+            <tr>
+                <td>Елена</td>
+                <td>08:52</td>
+                <td>[52.725003, 41.407828]</td>
+            </tr>
+            <tr>
+                <td>Василиса</td>
+                <td>08:57</td>
+                <td>[52.735916, 41.415974]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_4<br>14 km <br>96.726₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:32</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Александр</td>
+                <td>08:40</td>
+                <td>[52.751038, 41.474426]</td>
+            </tr>
+            <tr>
+                <td>Анастасия</td>
+                <td>08:47</td>
+                <td>[52.766748, 41.458484]</td>
+            </tr>
+            <tr>
+                <td>Денис</td>
+                <td>08:48</td>
+                <td>[52.765615, 41.457027]</td>
+            </tr>
+            <tr>
+                <td>Степан</td>
+                <td>08:54</td>
+                <td>[52.756325, 41.42712]</td>
+            </tr>
+            <tr>
+                <td>Василий</td>
+                <td>08:55</td>
+                <td>[52.756481, 41.426736]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_5<br>18 km <br>125.566₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:33</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Назар</td>
+                <td>08:42</td>
+                <td>[52.707141, 41.468272]</td>
+            </tr>
+            <tr>
+                <td>Павел</td>
+                <td>08:45</td>
+                <td>[52.695882, 41.478808]</td>
+            </tr>
+            <tr>
+                <td>Ярослав</td>
+                <td>08:48</td>
+                <td>[52.705374, 41.474562]</td>
+            </tr>
+            <tr>
+                <td>Светлана</td>
+                <td>08:50</td>
+                <td>[52.707537, 41.46168]</td>
+            </tr>
+            <tr>
+                <td>Сергей</td>
+                <td>08:52</td>
+                <td>[52.702131, 41.455302]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_6<br>22 km <br>148.211₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:23</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Лилия</td>
+                <td>08:39</td>
+                <td>[52.695375, 41.414576]</td>
+            </tr>
+            <tr>
+                <td>Инна</td>
+                <td>08:44</td>
+                <td>[52.706476, 41.406774]</td>
+            </tr>
+            <tr>
+                <td>Станислав</td>
+                <td>08:48</td>
+                <td>[52.71641, 41.415617]</td>
+            </tr>
+            <tr>
+                <td>Аделина</td>
+                <td>08:53</td>
+                <td>[52.725737, 41.397482]</td>
+            </tr>
+            <tr>
+                <td>Григорий</td>
+                <td>08:54</td>
+                <td>[52.726698, 41.394092]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_7<br>20 km <br>139.321₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>08:25</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Константин</td>
+                <td>08:31</td>
+                <td>[52.737131, 41.485729]</td>
+            </tr>
+            <tr>
+                <td>Юрий</td>
+                <td>08:38</td>
+                <td>[52.716883, 41.434533]</td>
+            </tr>
+            <tr>
+                <td>Герман</td>
+                <td>08:41</td>
+                <td>[52.705528, 41.43791]</td>
+            </tr>
+            <tr>
+                <td>Марфа</td>
+                <td>08:47</td>
+                <td>[52.715482, 41.46572]</td>
+            </tr>
+            <tr>
+                <td>Владимир</td>
+                <td>08:53</td>
+                <td>[52.725182, 41.472984]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>09:00</td>
+                <td>[52.739143, 41.424569]</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="platform-block">
+        <h2>Платформа 2 (Ожидаемое прибытие: 10:00)</h2>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_1<br>7 km <br>48.881₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:44</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Нелли</td>
+                <td>09:52</td>
+                <td>[52.756207, 41.488543]</td>
+            </tr>
+            <tr>
+                <td>Нина</td>
+                <td>09:57</td>
+                <td>[52.756932, 41.457469]</td>
+            </tr>
+            <tr>
+                <td>Игорь</td>
+                <td>09:58</td>
+                <td>[52.756485, 41.456624]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_2<br>12 km <br>78.827₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:36</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Анна</td>
+                <td>09:41</td>
+                <td>[52.736378, 41.48374]</td>
+            </tr>
+            <tr>
+                <td>Надежда</td>
+                <td>09:46</td>
+                <td>[52.727081, 41.485674]</td>
+            </tr>
+            <tr>
+                <td>Виктория</td>
+                <td>09:51</td>
+                <td>[52.735591, 41.476331]</td>
+            </tr>
+            <tr>
+                <td>Валерий</td>
+                <td>09:54</td>
+                <td>[52.725831, 41.457574]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_3<br>10 km <br>68.075₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:40</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Юлиан</td>
+                <td>09:49</td>
+                <td>[52.756709, 41.418007]</td>
+            </tr>
+            <tr>
+                <td>Вера</td>
+                <td>09:50</td>
+                <td>[52.755862, 41.416971]</td>
+            </tr>
+            <tr>
+                <td>Мария</td>
+                <td>09:53</td>
+                <td>[52.758649, 41.424128]</td>
+            </tr>
+            <tr>
+                <td>Алина</td>
+                <td>09:55</td>
+                <td>[52.756058, 41.428138]</td>
+            </tr>
+            <tr>
+                <td>Евгений</td>
+                <td>09:56</td>
+                <td>[52.756712, 41.427278]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_4<br>16 km <br>107.016₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:31</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Снежана</td>
+                <td>09:39</td>
+                <td>[52.726652, 41.427953]</td>
+            </tr>
+            <tr>
+                <td>Полина</td>
+                <td>09:42</td>
+                <td>[52.726155, 41.41404]</td>
+            </tr>
+            <tr>
+                <td>Зинаида</td>
+                <td>09:48</td>
+                <td>[52.736827, 41.407976]</td>
+            </tr>
+            <tr>
+                <td>Михаил</td>
+                <td>09:51</td>
+                <td>[52.740982, 41.419254]</td>
+            </tr>
+            <tr>
+                <td>Тихон</td>
+                <td>09:55</td>
+                <td>[52.745559, 41.434007]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_5<br>23 km <br>157.374₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:25</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Эмма</td>
+                <td>09:38</td>
+                <td>[52.69645, 41.396132]</td>
+            </tr>
+            <tr>
+                <td>Игнат</td>
+                <td>09:39</td>
+                <td>[52.69546, 41.398016]</td>
+            </tr>
+            <tr>
+                <td>Оксана</td>
+                <td>09:45</td>
+                <td>[52.695819, 41.425199]</td>
+            </tr>
+            <tr>
+                <td>Алиса</td>
+                <td>09:51</td>
+                <td>[52.715785, 41.454329]</td>
+            </tr>
+            <tr>
+                <td>Дмитрий</td>
+                <td>09:52</td>
+                <td>[52.71607, 41.448501]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_6<br>16 km <br>107.716₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:26</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Тимофей</td>
+                <td>09:26</td>
+                <td>[52.746676, 41.477593]</td>
+            </tr>
+            <tr>
+                <td>Роман</td>
+                <td>09:26</td>
+                <td>[52.716578, 41.396844]</td>
+            </tr>
+            <tr>
+                <td>Эльдар</td>
+                <td>09:33</td>
+                <td>[52.736498, 41.398361]</td>
+            </tr>
+            <tr>
+                <td>Татьяна</td>
+                <td>09:43</td>
+                <td>[52.764086, 41.389109]</td>
+            </tr>
+            <tr>
+                <td>Эльвира</td>
+                <td>09:52</td>
+                <td>[52.766421, 41.42473]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_7<br>25 km <br>170.534₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:04</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Раиса</td>
+                <td>09:09</td>
+                <td>[52.735502, 41.457772]</td>
+            </tr>
+            <tr>
+                <td>Антон</td>
+                <td>09:14</td>
+                <td>[52.716192, 41.475575]</td>
+            </tr>
+            <tr>
+                <td>Камилла</td>
+                <td>09:26</td>
+                <td>[52.705832, 41.485999]</td>
+            </tr>
+            <tr>
+                <td>Мирослав</td>
+                <td>09:34</td>
+                <td>[52.696371, 41.458812]</td>
+            </tr>
+            <tr>
+                <td>Милена</td>
+                <td>09:43</td>
+                <td>[52.695727, 41.484277]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_8<br>19 km <br>128.828₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>09:33</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Наталья</td>
+                <td>09:44</td>
+                <td>[52.707437, 41.423813]</td>
+            </tr>
+            <tr>
+                <td>Ксения</td>
+                <td>09:45</td>
+                <td>[52.706769, 41.424846]</td>
+            </tr>
+            <tr>
+                <td>Рита</td>
+                <td>09:47</td>
+                <td>[52.707051, 41.414016]</td>
+            </tr>
+            <tr>
+                <td>Жанна</td>
+                <td>09:53</td>
+                <td>[52.735467, 41.42703]</td>
+            </tr>
+            <tr>
+                <td>Захар</td>
+                <td>09:56</td>
+                <td>[52.736658, 41.446521]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>10:00</td>
+                <td>[52.754064, 41.454011]</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="platform-block">
+        <h2>Платформа 3 (Ожидаемое прибытие: 08:00)</h2>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_1<br>12 km <br>78.526₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:34</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Герман</td>
+                <td>07:40</td>
+                <td>[52.755766, 41.475875]</td>
+            </tr>
+            <tr>
+                <td>Диана</td>
+                <td>07:41</td>
+                <td>[52.755988, 41.475569]</td>
+            </tr>
+            <tr>
+                <td>Николай</td>
+                <td>07:48</td>
+                <td>[52.74836, 41.467491]</td>
+            </tr>
+            <tr>
+                <td>Елизавета</td>
+                <td>07:55</td>
+                <td>[52.736763, 41.486985]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_2<br>16 km <br>109.466₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:34</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Лидия</td>
+                <td>07:40</td>
+                <td>[52.7364, 41.438947]</td>
+            </tr>
+            <tr>
+                <td>Людмила</td>
+                <td>07:41</td>
+                <td>[52.736131, 41.438696]</td>
+            </tr>
+            <tr>
+                <td>Марина</td>
+                <td>07:43</td>
+                <td>[52.726392, 41.434445]</td>
+            </tr>
+            <tr>
+                <td>Валентина</td>
+                <td>07:47</td>
+                <td>[52.715592, 41.408543]</td>
+            </tr>
+            <tr>
+                <td>Вероника</td>
+                <td>07:52</td>
+                <td>[52.71696, 41.44491]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_3<br>20 km <br>139.125₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:25</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Агата</td>
+                <td>07:32</td>
+                <td>[52.767041, 41.477619]</td>
+            </tr>
+            <tr>
+                <td>Данил</td>
+                <td>07:37</td>
+                <td>[52.76712, 41.456027]</td>
+            </tr>
+            <tr>
+                <td>Леонид</td>
+                <td>07:43</td>
+                <td>[52.766987, 41.438986]</td>
+            </tr>
+            <tr>
+                <td>Артём</td>
+                <td>07:48</td>
+                <td>[52.756927, 41.428703]</td>
+            </tr>
+            <tr>
+                <td>Иван</td>
+                <td>07:50</td>
+                <td>[52.75179, 41.435926]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_4<br>23 km <br>157.444₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:19</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Богдан</td>
+                <td>07:26</td>
+                <td>[52.756754, 41.465811]</td>
+            </tr>
+            <tr>
+                <td>Руслан</td>
+                <td>07:33</td>
+                <td>[52.765837, 41.415229]</td>
+            </tr>
+            <tr>
+                <td>Аркадий</td>
+                <td>07:38</td>
+                <td>[52.746625, 41.426742]</td>
+            </tr>
+            <tr>
+                <td>Екатерина</td>
+                <td>07:45</td>
+                <td>[52.733395, 41.427837]</td>
+            </tr>
+            <tr>
+                <td>Ирина</td>
+                <td>07:51</td>
+                <td>[52.731108, 41.431099]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_5<br>21 km <br>143.339₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:26</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Галина</td>
+                <td>07:37</td>
+                <td>[52.706359, 41.48497]</td>
+            </tr>
+            <tr>
+                <td>Алексей</td>
+                <td>07:40</td>
+                <td>[52.698628, 41.472585]</td>
+            </tr>
+            <tr>
+                <td>Платон</td>
+                <td>07:42</td>
+                <td>[52.696314, 41.465701]</td>
+            </tr>
+            <tr>
+                <td>Дарья</td>
+                <td>07:44</td>
+                <td>[52.696773, 41.458203]</td>
+            </tr>
+            <tr>
+                <td>Тимур</td>
+                <td>07:53</td>
+                <td>[52.726689, 41.476043]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <tr>
+                <th colspan="3">vehicle_6<br>26 km <br>177.051₽</th>
+            </tr>
+            <tr>
+                <th>Точка</th>
+                <th>Время</th>
+                <th>Локация</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>depot</td>
+                <td>07:17</td>
+                <td>[52.74436, 41.478213]</td>
+            </tr>
+            <tr>
+                <td>Виктор</td>
+                <td>07:21</td>
+                <td>[52.747101, 41.455277]</td>
+            </tr>
+            <tr>
+                <td>Родион</td>
+                <td>07:29</td>
+                <td>[52.736768, 41.418479]</td>
+            </tr>
+            <tr>
+                <td>Андрей</td>
+                <td>07:35</td>
+                <td>[52.736406, 41.38303]</td>
+            </tr>
+            <tr>
+                <td>Лариса</td>
+                <td>07:43</td>
+                <td>[52.706344, 41.405097]</td>
+            </tr>
+            <tr>
+                <td>Савелий</td>
+                <td>07:46</td>
+                <td>[52.696842, 41.408797]</td>
+            </tr>
+            <tr>
+                <td>platform</td>
+                <td>08:00</td>
+                <td>[52.729204, 41.480243]</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

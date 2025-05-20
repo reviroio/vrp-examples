@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Маршрутный лист</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        .vehicle-block {
+            margin-bottom: 60px;
+        }
+
+        .container {
+            margin: 0 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+    fetch('../nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+
+<div class="container">
+    <h1>Маршрутный лист</h1>
+    <div class='vehicle-block'>
+        <h2>Машина 1</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>04:51 / 07:18</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 36</td>
+                <td>07:00 / 07:27</td>
+                <td>laptop × 1, tv × 2, washing machine × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 35</td>
+                <td>07:01 / 07:28</td>
+                <td>smartphone × 1, washing machine × 3, bicycle × 3, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 13</td>
+                <td>07:03 / 07:30</td>
+                <td>tv × 1, bicycle × 2, laptop × 3, washing machine × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 41</td>
+                <td>08:58 / 09:30</td>
+                <td>laptop × 1, tv × 2, smartphone × 1, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 86</td>
+                <td>11:00 / 11:32</td>
+                <td>washing machine × 1, laptop × 2, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 23</td>
+                <td>12:23 / 12:30</td>
+                <td>washing machine × 3, smartphone × 3, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 43</td>
+                <td>14:30 / 14:37</td>
+                <td>bicycle × 1, tv × 3, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 19</td>
+                <td>15:40 / 16:30</td>
+                <td>laptop × 1, bicycle × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 48</td>
+                <td>17:49 / 18:00</td>
+                <td>tv × 1, washing machine × 1, bicycle × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 16</td>
+                <td>20:00 / 20:11</td>
+                <td>bicycle × 1, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>20:15 / 22:26</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 2</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>11:48 / 14:24</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 97</td>
+                <td>13:54 / 14:30</td>
+                <td>smartphone × 3, bicycle × 2, laptop × 3, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 92</td>
+                <td>16:00 / 16:36</td>
+                <td>laptop × 2, washing machine × 1, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 37</td>
+                <td>17:30 / 17:54</td>
+                <td>washing machine × 2, bicycle × 3, laptop × 1, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 58</td>
+                <td>17:36 / 18:00</td>
+                <td>smartphone × 1, tv × 1, washing machine × 2, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 26</td>
+                <td>19:00 / 19:27</td>
+                <td>laptop × 1, bicycle × 2, washing machine × 1, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 85</td>
+                <td>19:03 / 19:30</td>
+                <td>bicycle × 2, washing machine × 3, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 78</td>
+                <td>20:00 / 21:00</td>
+                <td>bicycle × 1, washing machine × 2, tv × 1, smartphone × 2</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>20:08 / 23:08</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 3</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>04:54 / 07:54</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 20</td>
+                <td>07:00 / 08:00</td>
+                <td>laptop × 1, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 45</td>
+                <td>08:30 / 09:30</td>
+                <td>bicycle × 1, washing machine × 1, laptop × 1, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 38</td>
+                <td>09:58 / 10:00</td>
+                <td>bicycle × 2, tv × 3, washing machine × 1, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 64</td>
+                <td>12:00 / 12:02</td>
+                <td>laptop × 1, washing machine × 3, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 14</td>
+                <td>12:28 / 13:00</td>
+                <td>laptop × 1, tv × 1, bicycle × 3, washing machine × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 71</td>
+                <td>14:30 / 15:02</td>
+                <td>tv × 1, smartphone × 1, washing machine × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>14:39 / 17:11</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 4</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>07:19 / 09:24</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 81</td>
+                <td>09:25 / 09:30</td>
+                <td>laptop × 1, bicycle × 3, washing machine × 3, smartphone × 1, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 9</td>
+                <td>11:30 / 11:35</td>
+                <td>laptop × 2, bicycle × 3, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 74</td>
+                <td>12:00 / 12:29</td>
+                <td>laptop × 1, smartphone × 3, bicycle × 1, washing machine × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 61</td>
+                <td>12:01 / 12:30</td>
+                <td>laptop × 1, washing machine × 3, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 75</td>
+                <td>12:30 / 13:24</td>
+                <td>tv × 3, smartphone × 3, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 15</td>
+                <td>12:32 / 13:26</td>
+                <td>tv × 1, washing machine × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 67</td>
+                <td>12:36 / 13:30</td>
+                <td>laptop × 1, tv × 1, washing machine × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 88</td>
+                <td>13:00 / 14:00</td>
+                <td>laptop × 2, washing machine × 2, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 50</td>
+                <td>14:00 / 15:00</td>
+                <td>smartphone × 3, tv × 2, washing machine × 1, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 52</td>
+                <td>15:00 / 16:00</td>
+                <td>smartphone × 1, laptop × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 34</td>
+                <td>17:00 / 18:00</td>
+                <td>smartphone × 1, laptop × 2, bicycle × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 63</td>
+                <td>17:30 / 18:30</td>
+                <td>laptop × 2, washing machine × 2, bicycle × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 60</td>
+                <td>18:00 / 19:00</td>
+                <td>bicycle × 2, tv × 1, smartphone × 1, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>18:06 / 21:06</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 5</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>03:55 / 06:48</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 28</td>
+                <td>06:00 / 06:53</td>
+                <td>smartphone × 2, tv × 2, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 98</td>
+                <td>06:07 / 07:00</td>
+                <td>washing machine × 1, bicycle × 3, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 12</td>
+                <td>07:00 / 08:00</td>
+                <td>washing machine × 2, laptop × 1, tv × 2, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 39</td>
+                <td>08:30 / 09:30</td>
+                <td>smartphone × 3, tv × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 84</td>
+                <td>09:00 / 10:00</td>
+                <td>tv × 2, washing machine × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 33</td>
+                <td>09:54 / 10:30</td>
+                <td>bicycle × 2, washing machine × 2, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 56</td>
+                <td>12:00 / 12:36</td>
+                <td>smartphone × 1, washing machine × 2, tv × 1, laptop × 2, bicycle × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 62</td>
+                <td>14:00 / 14:40</td>
+                <td>bicycle × 3, washing machine × 3, tv × 3, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 22</td>
+                <td>15:00 / 15:57</td>
+                <td>bicycle × 1, smartphone × 2, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 82</td>
+                <td>15:03 / 16:00</td>
+                <td>laptop × 1, smartphone × 2, washing machine × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 79</td>
+                <td>16:30 / 17:30</td>
+                <td>smartphone × 1, laptop × 1, tv × 3, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 87</td>
+                <td>17:30 / 18:30</td>
+                <td>laptop × 1, tv × 3, bicycle × 1, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 29</td>
+                <td>18:30 / 19:30</td>
+                <td>tv × 1, smartphone × 2, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 31</td>
+                <td>19:30 / 20:30</td>
+                <td>tv × 1, washing machine × 3, bicycle × 1, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 8</td>
+                <td>20:00 / 21:00</td>
+                <td>tv × 1, bicycle × 2, laptop × 1, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 55</td>
+                <td>20:30 / 21:30</td>
+                <td>washing machine × 1, bicycle × 2, smartphone × 3, laptop × 2, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>20:35 / 23:35</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 6</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>04:59 / 07:59</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 18</td>
+                <td>07:00 / 08:00</td>
+                <td>washing machine × 3, bicycle × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 99</td>
+                <td>07:30 / 08:30</td>
+                <td>laptop × 3, bicycle × 3, washing machine × 3, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 77</td>
+                <td>09:30 / 10:22</td>
+                <td>washing machine × 3, smartphone × 2, laptop × 1, bicycle × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 59</td>
+                <td>09:33 / 10:25</td>
+                <td>smartphone × 1, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 17</td>
+                <td>10:20 / 10:30</td>
+                <td>washing machine × 2, laptop × 2, bicycle × 2, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 93</td>
+                <td>12:30 / 12:40</td>
+                <td>smartphone × 2, washing machine × 2, laptop × 1, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 100</td>
+                <td>14:00 / 14:46</td>
+                <td>tv × 3, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 47</td>
+                <td>15:30 / 16:30</td>
+                <td>smartphone × 2, tv × 3, bicycle × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 54</td>
+                <td>17:00 / 17:48</td>
+                <td>tv × 1, smartphone × 2, bicycle × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 11</td>
+                <td>17:30 / 17:56</td>
+                <td>smartphone × 2, washing machine × 2, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 90</td>
+                <td>17:34 / 18:00</td>
+                <td>washing machine × 2, bicycle × 2, smartphone × 3, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 25</td>
+                <td>19:30 / 20:09</td>
+                <td>bicycle × 1, laptop × 3, smartphone × 1, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 51</td>
+                <td>20:30 / 21:26</td>
+                <td>washing machine × 3, bicycle × 1, smartphone × 2, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 69</td>
+                <td>20:34 / 21:30</td>
+                <td>smartphone × 3, tv × 3, bicycle × 2, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>20:35 / 23:31</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 7</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>03:54 / 06:54</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 30</td>
+                <td>06:00 / 07:00</td>
+                <td>tv × 3, laptop × 1, bicycle × 1, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 46</td>
+                <td>06:00 / 07:00</td>
+                <td>laptop × 1, smartphone × 1, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 24</td>
+                <td>08:00 / 09:00</td>
+                <td>bicycle × 3, washing machine × 1, smartphone × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 1</td>
+                <td>08:47 / 09:30</td>
+                <td>laptop × 1, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 27</td>
+                <td>10:55 / 11:30</td>
+                <td>laptop × 2, tv × 1, washing machine × 3, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 5</td>
+                <td>12:57 / 13:30</td>
+                <td>laptop × 1, tv × 2, washing machine × 3, smartphone × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 42</td>
+                <td>15:00 / 15:33</td>
+                <td>smartphone × 1, tv × 1, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 21</td>
+                <td>16:30 / 17:30</td>
+                <td>tv × 3, washing machine × 1, smartphone × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 70</td>
+                <td>17:55 / 18:00</td>
+                <td>bicycle × 1, washing machine × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 2</td>
+                <td>20:00 / 20:05</td>
+                <td>smartphone × 2, washing machine × 1, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 10</td>
+                <td>20:02 / 20:24</td>
+                <td>washing machine × 2, smartphone × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 7</td>
+                <td>20:08 / 20:30</td>
+                <td>tv × 3, smartphone × 2, bicycle × 2, washing machine × 1, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>20:15 / 22:37</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 8</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>08:28 / 11:28</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 95</td>
+                <td>10:30 / 11:30</td>
+                <td>smartphone × 2, tv × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 49</td>
+                <td>11:30 / 12:30</td>
+                <td>smartphone × 2, washing machine × 1, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>11:33 / 14:33</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 9</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>03:55 / 06:40</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 4</td>
+                <td>06:00 / 06:45</td>
+                <td>washing machine × 3, laptop × 2, bicycle × 2, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 66</td>
+                <td>06:08 / 06:53</td>
+                <td>washing machine × 1, bicycle × 3, laptop × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 72</td>
+                <td>06:15 / 07:00</td>
+                <td>laptop × 3, smartphone × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 89</td>
+                <td>06:30 / 07:30</td>
+                <td>washing machine × 2, smartphone × 3, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 53</td>
+                <td>08:30 / 09:30</td>
+                <td>laptop × 1, washing machine × 2, bicycle × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 83</td>
+                <td>09:30 / 10:30</td>
+                <td>washing machine × 1, bicycle × 1, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 80</td>
+                <td>10:00 / 11:00</td>
+                <td>smartphone × 1, washing machine × 3, bicycle × 1, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 3</td>
+                <td>10:54 / 11:30</td>
+                <td>bicycle × 2, smartphone × 3, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 44</td>
+                <td>13:00 / 13:36</td>
+                <td>smartphone × 3, tv × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 40</td>
+                <td>15:00 / 15:23</td>
+                <td>tv × 3, bicycle × 2, laptop × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 65</td>
+                <td>15:24 / 15:30</td>
+                <td>laptop × 2, bicycle × 2, smartphone × 3, washing machine × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 91</td>
+                <td>17:30 / 17:36</td>
+                <td>washing machine × 2, laptop × 2, bicycle × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 76</td>
+                <td>18:00 / 19:00</td>
+                <td>bicycle × 3, laptop × 1, tv × 3, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 73</td>
+                <td>19:30 / 19:51</td>
+                <td>laptop × 1, bicycle × 2, smartphone × 3, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 6</td>
+                <td>19:39 / 20:00</td>
+                <td>smartphone × 3, bicycle × 3, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>19:42 / 22:03</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class='vehicle-block'>
+        <h2>Машина 10</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Тип</th>
+                <th>Объект</th>
+                <th>Время (мин/макс)</th>
+                <th>Товары</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>08:53 / 10:55</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 32</td>
+                <td>10:58 / 11:00</td>
+                <td>laptop × 1, tv × 3, washing machine × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 94</td>
+                <td>13:00 / 13:02</td>
+                <td>laptop × 3, smartphone × 3, bicycle × 2, washing machine × 2</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 68</td>
+                <td>13:26 / 14:00</td>
+                <td>bicycle × 3, smartphone × 1, laptop × 1</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 57</td>
+                <td>15:30 / 15:58</td>
+                <td>washing machine × 1, laptop × 3, smartphone × 1, tv × 3</td>
+            </tr>
+            <tr>
+                <td>Клиент</td>
+                <td>Client 96</td>
+                <td>15:32 / 16:00</td>
+                <td>smartphone × 2, tv × 2</td>
+            </tr>
+            <tr>
+                <td>Склад</td>
+                <td>Warehouse 1</td>
+                <td>15:35 / 18:03</td>
+                <td>-</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
