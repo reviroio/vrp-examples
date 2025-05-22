@@ -1,0 +1,15 @@
+type,object,time,goods
+warehouse,Warehouse 1,03:54 / 06:54,-
+client,Client 30,06:00 / 07:00,"tv x 3, laptop x 1, bicycle x 1, smartphone x 1"
+client,Client 46,06:00 / 07:00,"laptop x 1, smartphone x 1, tv x 3"
+client,Client 24,08:00 / 09:00,"bicycle x 3, washing machine x 1, smartphone x 1"
+client,Client 1,08:47 / 09:30,"laptop x 1, tv x 1"
+client,Client 27,10:55 / 11:30,"laptop x 2, tv x 1, washing machine x 3, bicycle x 3"
+client,Client 5,12:57 / 13:30,"laptop x 1, tv x 2, washing machine x 3, smartphone x 2"
+client,Client 42,15:00 / 15:33,"smartphone x 1, tv x 1, laptop x 2"
+client,Client 21,16:30 / 17:30,"tv x 3, washing machine x 1, smartphone x 3"
+client,Client 70,17:55 / 18:00,"bicycle x 1, washing machine x 3, laptop x 1"
+client,Client 2,20:00 / 20:05,"smartphone x 2, washing machine x 1, tv x 1"
+client,Client 10,20:02 / 20:24,"washing machine x 2, smartphone x 3, laptop x 1"
+client,Client 7,20:08 / 20:30,"tv x 3, smartphone x 2, bicycle x 2, washing machine x 1, laptop x 3"
+warehouse,Warehouse 1,20:15 / 22:37,-

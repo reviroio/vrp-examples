@@ -1,0 +1,5 @@
+type,object,time,goods
+warehouse,Warehouse 1,08:28 / 11:28,-
+client,Client 95,10:30 / 11:30,"smartphone x 2, tv x 2, bicycle x 3"
+client,Client 49,11:30 / 12:30,"smartphone x 2, washing machine x 1, tv x 3"
+warehouse,Warehouse 1,11:33 / 14:33,-

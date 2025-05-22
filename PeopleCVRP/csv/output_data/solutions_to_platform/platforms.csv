@@ -1,6 +1,0 @@
-id,number of vehicles,distance,time,cost
-platform_1,6,124 km (123445 m),"6 hours, 0 minutes",1234.45
-platform_2,5,108 km (107728 m),"5 hours, 35 minutes",1077.28
-platform_3,5,124 km (123401 m),"4 hours, 28 minutes",1234.01
-platform_4,5,117 km (116968 m),"4 hours, 38 minutes",1169.68
-platform_5,4,100 km (99484 m),"3 hours, 49 minutes",994.84
