@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Описание процесса маршрутизации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .container {
+            margin: 0 30px;
+        }
+
+        h1, h2 {
+            color: #343a40;
+        }
+
+        h1 {
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+        code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+<div class="container">
+    <h1>Процесс маршрутизации</h1>
+
+    <div class="section">
+        <h2>1. Расчёт матриц расстояния и времени</h2>
+        <ul>
+            <li>Матрица делится на блоки <code>50×50</code> локаций</li>
+            <li>Всего формируется <code>(n / 50)<sup>2</sup></code> матриц</li>
+            <li>Расчёт каждой матрицы производится с помощью <strong>Valhalla</strong></li>
+            <li>Результаты сохраняются в базу данных <strong>PostgreSQL</strong></li>
+            <li>Среднее время вычисления одной матрицы <code>50×50</code>: <strong>~1.4 секунд</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Вычисление решения задачи</h2>
+        <ul>
+            <li>Общая задача делится на подзадачи по сменам</li>
+            <li>Расчет наемных машин:
+                <br><code>(нехватка / вместимость машины) * 10%</code> (процент дополнительных машин для ускорения поиска решения можно настраивать вручную)
+            </li>
+            <li>Максимальное время поиска решения дневной смены: <strong>5 минут</strong> (настраивается вручную)</li>
+            <li>Максимальное время поиска решения ночной смены: <strong>30 секунд</strong> (настраивается вручную)</li>
+            <li>На вход алгоритму подаются:
+                <ul>
+                    <li>Локации: склады, клиенты</li>
+                    <li>Количество машин</li>
+                    <li>Матрицы времени и расстояния</li>
+                </ul>
+            </li>
+            <li>Ограничения:
+                <ul>
+                    <li>Вместимость машины: не превышена</li>
+                    <li>Временные окна: машины доставляют товары в указанное время</li>
+                    <li>Для ночной смены: использование только собственного траспорта</li>
+                </ul>
+            </li>
+            <li>Целевые функции:
+                <ul>
+                    <li>Минимизация суммарного расстояния</li>
+                    <li>Минимизация стоимости маршрутов и др.</li>
+                    <li>Минимизация использования наемного траспорта для дневной смены</li>
+                </ul>
+            </li>
+            <li>Используются метаевристики и стратегии поиска</li>
+            <li>Решение каждой подзадачи добавляется к общему результату</li>
+            <li>Примерное минимальное время для 50 клиентов: <strong>12 секунд</strong></li>
+            <li>Примерное минимальное время для 100 клиентов: <strong>1 минута 7 секунд</strong></li>
+            <li>Примерное минимальное время для 200 клиентов: <strong>4 минуты 36 секунд</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Запись решения в формате GeoJSON</h2>
+        <ul>
+            <li>Для каждого маршрута рассчитываются промежуточные участки с помощью <strong>Valhalla</strong></li>
+            <li>Маршруты преобразуются в формат <strong>GeoJSON</strong></li>
+            <li>Данные передаются на отображение на карте, включая дополнительные сведения</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

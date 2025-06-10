@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Маршрутный лист</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        .platform-block {
+            margin-bottom: 50px;
+        }
+
+        .container {
+            margin: 0 30px;
+        }
+    </style>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../nav.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<script>
+    fetch('../nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+<div class="container">
+    <h2>Машина 1 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-1.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA799</td>
+            <td>06:35 - 10:30</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>10</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA799</td>
+            <td>09:00 - 11:55</td>
+            <td>141207, г. Пушкино, ул. Лермонтова, 2</td>
+            <td>56.01367, 37.84186</td>
+            <td>1.4</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA799</td>
+            <td>09:45 - 12:40</td>
+            <td>Московская обл., Пушкино г., Чехова ул., д.12</td>
+            <td>56.00871, 37.85191</td>
+            <td>8.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA799</td>
+            <td>11:08 - 15:03</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>10</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 2 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-2.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA800</td>
+            <td>05:26 - 10:52</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>10</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA800</td>
+            <td>07:30 - 11:56</td>
+            <td>Москва г, Чусовская ул., д 13</td>
+            <td>55.81581, 37.81111</td>
+            <td>5.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA800</td>
+            <td>08:14 - 12:40</td>
+            <td>Москва г, Хабаровская ул., д 12/23</td>
+            <td>55.82175, 37.82676</td>
+            <td>5.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA800</td>
+            <td>09:20 - 14:46</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>10</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 3 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-3.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA801</td>
+            <td>05:56 - 10:52</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>9</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA801</td>
+            <td>08:00 - 11:56</td>
+            <td>г. Москва 15-я Парковая ул., д. 40, к. 1</td>
+            <td>55.80508, 37.8192</td>
+            <td>6.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA801</td>
+            <td>09:00 - 12:40</td>
+            <td>Москва г., 9-я Парковая ул., д 68 к 5</td>
+            <td>55.80813, 37.79943</td>
+            <td>3.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA801</td>
+            <td>10:03 - 14:43</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>9</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 4 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-4.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA809</td>
+            <td>00:26 - 02:37</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>14</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA809</td>
+            <td>03:29 - 04:40</td>
+            <td>MО, Дмитровский р, Семеновское, c113</td>
+            <td>56.32394, 37.13097</td>
+            <td>1.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA809</td>
+            <td>11:00 - 12:11</td>
+            <td>ВО, с Ямное, ул Ленина, д. 63</td>
+            <td>51.7905, 39.1522</td>
+            <td>6.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA809</td>
+            <td>11:44 - 13:55</td>
+            <td>ВО, с. Ямное, Фельдмаршала Кутузова, 32а</td>
+            <td>51.81282, 39.13987</td>
+            <td>7.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA809</td>
+            <td>17:09 - 20:20</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>14</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 5 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-5.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA810</td>
+            <td>05:50 - 10:48</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>13</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA810</td>
+            <td>09:00 - 12:58</td>
+            <td>МО, г. Руза, Территория Микрорайон 9а</td>
+            <td>55.70933, 36.20352</td>
+            <td>4.9</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA810</td>
+            <td>09:42 - 13:40</td>
+            <td>143103, г. Руза, ул. Социалистическая, д. 61, помещение 1</td>
+            <td>55.70354, 36.20352</td>
+            <td>4.2</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA810</td>
+            <td>11:52 - 16:50</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>13</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 6 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-6.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>A111AA811</td>
+            <td>-1:20 - 01:22</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>12</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA811</td>
+            <td>01:20 - 03:22</td>
+            <td>ООО "Лента", 142605, Московская обл., г. Орехово-Зуево, ул. Ленина, д. 44А</td>
+            <td>55.80203, 38.98122</td>
+            <td>5.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA811</td>
+            <td>02:38 - 04:40</td>
+            <td>Россия, Московская область, Орехово-Зуевский район, посёлок Авсюнино, ул. Энтузиастов, 40</td>
+            <td>55.55885, 39.10485</td>
+            <td>4.9</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>A111AA811</td>
+            <td>05:05 - 08:07</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>12</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Машина 50 (<a
+            href='https://github.com/reviroio/vrp-examples/blob/master/DeliveryV2CVRP/output/vehicle-50.csv'>file</a>)
+    </h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Госномер / Наименование ТС</th>
+            <th>Время (мин/макс)</th>
+            <th>Адресс</th>
+            <th>Локация</th>
+            <th>Паллет, шт</th>
+            <th>Тип операции на точке</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>hired vehicle 10</td>
+            <td>-1:20 - 02:19</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>31</td>
+            <td>Загрузка</td>
+        </tr>
+        <tr>
+            <td>hired vehicle 10</td>
+            <td>00:35 - 03:34</td>
+            <td>ООО "Лента", 141006, Московская обл., Мытищинский р-н, г. Мытищи, ул. 1-я Пролетарская, д. 12</td>
+            <td>55.92301, 37.76932</td>
+            <td>19.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>hired vehicle 10</td>
+            <td>01:41 - 04:40</td>
+            <td>ООО "Лента", 125130, Москва, ул. Зои и Александра Космодемьянских, 23</td>
+            <td>55.82411, 37.51809</td>
+            <td>12.0</td>
+            <td>Разгрузка</td>
+        </tr>
+        <tr>
+            <td>hired vehicle 10</td>
+            <td>02:48 - 06:47</td>
+            <td>Склад</td>
+            <td>55.668845, 37.647295</td>
+            <td>31</td>
+            <td>Загрузка</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

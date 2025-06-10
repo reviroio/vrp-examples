@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Routing</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://rawgit.com/openplans/Leaflet.AnimatedMarker/master/src/AnimatedMarker.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+</script>
+<div id="container">
+    <div id="nav-placeholder"></div>
+
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="dragbar"></div>
+    </div>
+    <div id="routes-table">
+        <div style="padding: 10px 0">
+            <label for="directionSelect"><strong>Выберите смену:</strong></label>
+            <select id="directionSelect">
+                <option value="day">День</option>
+                <option value="night">Ночь</option>
+            </select>
+        </div>
+        <table>
+            <thead style="position: sticky">
+            <tr>
+                <th>Машина</th>
+                <th>Время</th>
+                <th>Дистанция</th>
+                <th>Вместимость</th>
+                <th style="padding:0;">
+                    <div class="timeline-scale"></div>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+</div>
+<script>
+    const map = L.map('map').setView([55.755031, 37.621090], 9.9);
+    const colors = [
+        "#33af33", "#62b297", "#6da66d", "#4d9652",
+        "#4aa44a", "#478147", "#007e3e", "#1f694d",
+        "#438c03", "#4a7c18", "#4d7c06", "#1e6b1e",
+        "#4e4eaf", "#607cd2", "#4475a6", "#46798d",
+        "#3a6c8a", "#286491", "#2d559d", "#569eb6",
+        "#3a91bb", "#6ebac4", "#234562", "#0047AB",
+        "#007FFF", "#1560BD",
+        "#efc261", "#e7dc67", "#eabb53", "#ecba3b",
+        "#e5c944", "#f1ba2e", "#d7a62b", "#f1c721",
+        "#7e147e", "#7a469b", "#562f69", "#B7AFA3",
+        "#702963",
+        "#c4828e", "#c26270", "#FF69B4", "#b73b7e",
+        "#DB7093", "#C71585", "#DA70D6", "#FF00FF",
+        "#FF00FF", "#FFBCD9", "#FFC1CC", "#FC8EAC",
+        "#FF007F", "#FA86C4", "#DE5D83",
+        "#FF2400", "#8B0000", "#CD5C5C", "#F08080",
+        "#B22222", "#FF6347", "#FA8072", "#FFA07A",
+        "#E30B5D", "#800020", "#FF0000", "#E34234",
+        "#9B111E", "#BF4F51"
+    ]
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_no_buildings/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://carto.com/">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+
+    let selected_route = 0
+
+    function clearMap() {
+        Object.values(map._layers).forEach(layer => {
+            if (!layer.options.attribution) map.removeLayer(layer);
+        });
+    }
+
+    function tintImage(src, color, callback) {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.src = src;
+        img.onload = () => {
+            const canvas = document.createElement("canvas");
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0);
+            ctx.globalCompositeOperation = "source-atop";
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            callback(canvas.toDataURL());
+        };
+    }
+
+    function timeToMinutes(time) {
+        const [h, m] = time.split(" -")[0].split(':').map(Number);
+        return h * 60 + m;
+    }
+
+    function prettyMinutes(minutes) {
+        const hours = Math.floor(minutes / 60);
+        const minute = minutes % 60;
+        if (hours > 0){
+            return `${hours} ч, ${minute} мин`;
+        }
+        return `${minute} мин`
+    }
+
+    function createSegment(diff, color, hideTitle) {
+        const segment = document.createElement('div');
+        if (!hideTitle) {
+            segment.className = 'segment'
+            segment.title = prettyMinutes(diff);
+        }
+        segment.style.flexGrow = diff;
+        segment.style.backgroundColor = color;
+        return segment
+    }
+
+    const drawRoutes = (features) => {
+        clearMap();
+        const routeGroups = {"all": L.layerGroup()};
+        const animations = {};
+        const colorMapping = {}
+
+        features.forEach((feature, ind) => {
+            const {
+                main_points: mainIndexes,
+                vehicle_id: vehicleId,
+                duration,
+                distance,
+                capacity,
+                hired_vehicles: hiredVehicles,
+                vehicle_info: vehicleInfo,
+            } = feature.properties;
+            const coords = feature.geometry.coordinates;
+            const times = feature.properties.arrival_time.split(";");
+            const color = colors[ind];
+            colorMapping[vehicleId] = color
+
+            if (!routeGroups[vehicleId]) {
+                routeGroups[vehicleId] = L.layerGroup();
+            }
+
+            const depot = L.circleMarker(feature.properties.depot, {
+                radius: 8,
+                color: "#000",
+                fillColor: "#000000",
+                fillOpacity: 1
+            }).bindPopup("Склад");
+
+            const polyline = L.polyline(coords, {
+                color,
+                weight: 3
+            }).bindPopup(`Машина ${vehicleId}`);
+
+            animations[vehicleId] = () => tintImage('car.png', color, (coloredIconUrl) => {
+                const _polyline = L.polyline(coords);
+                const car = L.icon({
+                    iconUrl: coloredIconUrl,
+                    iconSize: [32, 32],
+                    iconAnchor: [16, 16],
+                    popupAnchor: [0, -16]
+                });
+                const animatedPolyline = L.animatedMarker(_polyline.getLatLngs(), {
+                    autoStart: true,
+                    icon: car,
+                    distance: 300,
+                    interval: 200,
+                });
+                animatedPolyline.addTo(map);
+            });
+
+            routeGroups[vehicleId].addLayer(polyline).addLayer(depot)
+            routeGroups["all"].addLayer(polyline).addLayer(depot)
+
+            mainIndexes.forEach((index, i) => {
+                const marker = L.marker(coords[index]).bindPopup(times[i])
+                routeGroups[vehicleId].addLayer(marker);
+                routeGroups["all"].addLayer(marker);
+            });
+        });
+
+        routeGroups["all"].addTo(map);
+        drawTable(features, map, routeGroups, animations, colorMapping)
+    };
+
+    const drawTable = (features, map, routeGroups, animations, colorMapping) => {
+        const tableBody = document.getElementById('tableBody');
+        const routesData = features.map(i => {
+            return {
+                ...i.properties,
+                times: i.properties.arrival_time.split(";"),
+                timeline: i.properties.arrival_time.split(";").map((time, ind) => {
+                    const minutes = timeToMinutes(time);
+                    return {"name": i.properties.addresses[ind], time, minutes};
+                })
+            }
+        })
+
+        function renderTable() {
+            tableBody.innerHTML = '';
+            routesData.forEach(route => {
+                const row = document.createElement('tr');
+                const timeline = document.createElement('td');
+                timeline.className = 'route-row';
+                timeline.style.padding = '8px 0px';
+                row.dataset.vehicleId = route.vehicle_id;
+                timeline.appendChild(createSegment(route.timeline[0].minutes, 'transparent', true));
+                route.timeline.forEach((curr, i) => {
+                    const point = document.createElement('div');
+                    point.className = 'icon';
+                    if (i > 0 && i < route.timeline.length - 1) {
+                        point.className += ' user-icon'
+                    }
+                    point.title = `${curr.name} (${curr.time})`;
+                    timeline.appendChild(point);
+
+                    if (i < route.timeline.length - 1) {
+                        const next = route.timeline[i + 1];
+                        timeline.appendChild(createSegment(next.minutes - curr.minutes, colorMapping[route.vehicle_id], false));
+                    }
+                })
+                timeline.appendChild(createSegment(timeToMinutes("24:00") - route.timeline[route.timeline.length - 1].minutes, 'transparent', true));
+
+                row.innerHTML = `
+                    <td>${route.vehicle_id}</td>
+                    <td>${route.duration}</td>
+                    <td>${route.distance}</td>
+                    <td>${route.capacity}</td>
+                `
+                row.appendChild(timeline);
+                tableBody.appendChild(row);
+            });
+
+            tableBody.querySelectorAll("tr").forEach(row => {
+                row.addEventListener("click", () => {
+                    console.log(row.dataset.vehicleId);
+                    console.log(selected_route)
+                    if (selected_route === row.dataset.vehicleId) {
+                        row.style.backgroundColor = null;
+                        clearMap();
+                        routeGroups["all"].addTo(map);
+                        selected_route = 0
+                    }else{
+                        tableBody.querySelectorAll("tr").forEach(i => i.style.backgroundColor = null);
+                        row.style.backgroundColor = "#d2d2d2";
+                        clearMap();
+                        animations[row.dataset.vehicleId]();
+                        routeGroups[row.dataset.vehicleId].addTo(map);
+                        selected_route = row.dataset.vehicleId;
+                    }
+
+                });
+            });
+        }
+
+        renderTable('all');
+    };
+
+    const dragbar = document.getElementById("dragbar");
+    const mapContainer = document.getElementById("map-container");
+    let dragging = false;
+
+    dragbar.addEventListener("mousedown", (e) => {
+        e.preventDefault();
+        dragging = true;
+        document.body.style.cursor = "row-resize";
+    });
+
+    window.addEventListener("mousemove", (e) => {
+        if (!dragging) return;
+        const newHeight = e.clientY;
+        if (newHeight > 100 && newHeight < window.innerHeight - 100) {
+            mapContainer.style.height = `${newHeight}px`;
+            document.getElementById("container").style.setProperty("--map-height", `${(newHeight / window.innerHeight) * 100}%`);
+        }
+    });
+
+    window.addEventListener("mouseup", () => {
+        if (dragging) {
+            dragging = false;
+            document.body.style.cursor = "default";
+        }
+    });
+
+    document.getElementsByClassName("leaflet-control-attribution")[0].style.display = "none";
+
+    document.getElementById('directionSelect').addEventListener('change', function () {
+        const selectedDirection = this.value;
+        fetch(`delivery_routes_${selectedDirection}.geojson`)
+            .then(res => res.json())
+            .then(data => drawRoutes(data.features));
+    });
+
+    function renderTimelineHeader() {
+        const timelineScale = document.querySelector('.timeline-scale');
+        if (!timelineScale) return;
+
+        for (let h = 0; h <= 23; h++) {
+            const hourStr = h.toString().padStart(2, '0');
+            const div = document.createElement('div');
+            div.className = 'time-marker';
+            div.style.flexGrow = 60;
+            div.textContent = hourStr;
+            timelineScale.appendChild(div);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', renderTimelineHeader);
+
+    fetch('delivery_routes_day.geojson')
+        .then(res => res.json())
+        .then(data => drawRoutes(data.features));
+
+</script>
+</body>
+</html>
