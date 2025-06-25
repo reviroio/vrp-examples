@@ -39,7 +39,8 @@
                 <th>Машина</th>
                 <th>Время</th>
                 <th>Дистанция</th>
-                <th>Вместимость</th>
+                <th>Утил.</th>
+                <th>Утил. %</th>
                 <th style="padding:0;">
                     <div class="timeline-scale"></div>
                 </th>
@@ -105,11 +106,16 @@
     }
 
     function timeToMinutes(time) {
-        const [h, m] = time.split(" -")[0].split(':').map(Number);
-        return h * 60 + m;
+        const [h1, m1] = time.split(" -")[0].split(':').map(Number);
+        const [h2, m2] = time.split(" -")[1].split(':').map(Number);
+        return [h1 * 60 + m1, h2 * 60 + m2];
     }
 
     function prettyMinutes(minutes) {
+        console.log(minutes)
+        if(typeof minutes === "string") {
+            return minutes
+        }
         const hours = Math.floor(minutes / 60);
         const minute = minutes % 60;
         if (hours > 0){
@@ -118,11 +124,15 @@
         return `${minute} мин`
     }
 
-    function createSegment(diff, color, hideTitle) {
+    function createSegment(diff, color, hideTitle, newTitle) {
         const segment = document.createElement('div');
         if (!hideTitle) {
             segment.className = 'segment'
-            segment.title = prettyMinutes(diff);
+            if (!newTitle){
+                segment.title = prettyMinutes(diff);
+            }else{
+                segment.title = prettyMinutes(newTitle);
+            }
         }
         segment.style.flexGrow = diff;
         segment.style.backgroundColor = color;
@@ -218,7 +228,7 @@
                 timeline.className = 'route-row';
                 timeline.style.padding = '8px 0px';
                 row.dataset.vehicleId = route.vehicle_id;
-                timeline.appendChild(createSegment(route.timeline[0].minutes, 'transparent', true));
+                timeline.appendChild(createSegment(route.timeline[0].minutes[0], 'transparent', true));
                 route.timeline.forEach((curr, i) => {
                     const point = document.createElement('div');
                     point.className = 'icon';
@@ -226,20 +236,21 @@
                         point.className += ' user-icon'
                     }
                     point.title = `${curr.name} (${curr.time})`;
-                    timeline.appendChild(point);
-
-                    if (i < route.timeline.length - 1) {
-                        const next = route.timeline[i + 1];
-                        timeline.appendChild(createSegment(next.minutes - curr.minutes, colorMapping[route.vehicle_id], false));
+                    // timeline.appendChild(point);
+                    timeline.appendChild(createSegment(curr.minutes[1] - curr.minutes[0], '#808080', false, curr.time));
+                    if (i < route.timeline.length - 1){
+                        timeline.appendChild(createSegment(route.timeline[i+1].minutes[0] - curr.minutes[1], colorMapping[route.vehicle_id], false, `${curr.time.split(" - ")[1]} - ${route.timeline[i+1].time.split(" - ")[0]}`))
                     }
                 })
-                timeline.appendChild(createSegment(timeToMinutes("24:00") - route.timeline[route.timeline.length - 1].minutes, 'transparent', true));
+                timeline.appendChild(createSegment(timeToMinutes("24:00 - 24:00")[0] - route.timeline[route.timeline.length - 1].minutes[1], 'transparent', true));
 
+                let capacity_split = route.capacity.split("/").map(Number)
                 row.innerHTML = `
                     <td>${route.vehicle_id}</td>
                     <td>${route.duration}</td>
                     <td>${route.distance}</td>
                     <td>${route.capacity}</td>
+                    <td>${(capacity_split[0] * 100 / capacity_split[1]).toFixed(2)}</td>
                 `
                 row.appendChild(timeline);
                 tableBody.appendChild(row);
