@@ -22,7 +22,24 @@
     <div id="nav-placeholder"></div>
 
     <div id="map-container">
-        <div id="map"></div>
+        <div id="map">
+            <div style="width: 100%; height: 100%; display: flex; flex-direction: column-reverse;">
+                <div id="info"
+                     style="position: sticky; display: flex; flex-direction: column; align-items: flex-end; height: 80px; justify-content: center; z-index: 10000;">
+                    <div style="width: 200px; height: 20px; background-color: #595959; border-radius: 5px; color: white; text-align: center">
+                        Погрузка
+                    </div>
+                    <div style="width: 200px; height: 20px; background-color: #808080; border-radius: 5px; color: white; text-align: center">
+                        Выгрузка
+                    </div>
+                    <div style="width: 200px; height: 20px; background-color: #33af33; border-radius: 5px; color: white; text-align: center">
+                        Дорога до точки
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <div id="dragbar"></div>
     </div>
     <div id="routes-table">
@@ -113,12 +130,12 @@
 
     function prettyMinutes(minutes) {
         console.log(minutes)
-        if(typeof minutes === "string") {
+        if (typeof minutes === "string") {
             return minutes
         }
         const hours = Math.floor(minutes / 60);
         const minute = minutes % 60;
-        if (hours > 0){
+        if (hours > 0) {
             return `${hours} ч, ${minute} мин`;
         }
         return `${minute} мин`
@@ -128,9 +145,9 @@
         const segment = document.createElement('div');
         if (!hideTitle) {
             segment.className = 'segment'
-            if (!newTitle){
+            if (!newTitle) {
                 segment.title = prettyMinutes(diff);
-            }else{
+            } else {
                 segment.title = prettyMinutes(newTitle);
             }
         }
@@ -237,9 +254,18 @@
                     }
                     point.title = `${curr.name} (${curr.time})`;
                     // timeline.appendChild(point);
-                    timeline.appendChild(createSegment(curr.minutes[1] - curr.minutes[0], '#808080', false, curr.time));
-                    if (i < route.timeline.length - 1){
-                        timeline.appendChild(createSegment(route.timeline[i+1].minutes[0] - curr.minutes[1], colorMapping[route.vehicle_id], false, `${curr.time.split(" - ")[1]} - ${route.timeline[i+1].time.split(" - ")[0]}`))
+                    let col = '#808080'
+                    let text = 'Выгрузка'
+                    let time = '40 мин'
+                    if (i === 0) {
+                        col = '#595959'
+                        text = 'Погрузка'
+                        time = '1ч, 30 мин'
+                    }
+                    timeline.appendChild(createSegment(curr.minutes[1] - curr.minutes[0], col, false, `${text} ${curr.time} (${time})`));
+                    if (i < route.timeline.length - 1) {
+                        time = prettyMinutes(route.timeline[i + 1].minutes[0] - curr.minutes[1])
+                        timeline.appendChild(createSegment(route.timeline[i + 1].minutes[0] - curr.minutes[1], colorMapping[route.vehicle_id], false, `Дорога ${curr.time.split(" - ")[1]} - ${route.timeline[i + 1].time.split(" - ")[0]} (${time})`))
                     }
                 })
                 timeline.appendChild(createSegment(timeToMinutes("24:00 - 24:00")[0] - route.timeline[route.timeline.length - 1].minutes[1], 'transparent', true));
@@ -265,7 +291,7 @@
                         clearMap();
                         routeGroups["all"].addTo(map);
                         selected_route = 0
-                    }else{
+                    } else {
                         tableBody.querySelectorAll("tr").forEach(i => i.style.backgroundColor = null);
                         row.style.backgroundColor = "#d2d2d2";
                         clearMap();
